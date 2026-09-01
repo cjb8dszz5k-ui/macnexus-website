@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Farbschema sofort setzen, damit nichts in der falschen Farbe aufblitzt */
+(function(){try{var v=localStorage.getItem("macnexus-theme");
+document.documentElement.setAttribute("data-theme",
+(v==="light"||v==="dark"||v==="system")?v:"light");}
+catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<title>Kontakt &amp; Terminanfrage — MacNexus</title>
+<meta name="description" content="Termin für 1:1 Apple-Support anfragen oder Business-Erstgespräch vereinbaren. Antwort innerhalb eines Werktags. Bezirk Baden, Wien und ganz Österreich.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+        <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name"><strong>MacNexus</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <div class="nav__menu" id="nav-menu">
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="support.html">Support</a>
+        <a href="academy.html">Academy</a>
+        <a href="business.html">Business</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="buchen.html">Buchen</a>
+        <a href="kontakt.html" class="is-active">Kontakt</a>
+      </nav>
+      <div class="themeswitch" role="radiogroup" aria-label="Farbschema">
+        <button type="button" class="themeswitch__btn" data-theme-btn="light"
+                role="radio" aria-checked="false" aria-label="Helles Design" title="Hell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="dark"
+                role="radio" aria-checked="false" aria-label="Dunkles Design" title="Dunkel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 019.7 3.5a8.6 8.6 0 1010.8 10.8z"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="system"
+                role="radio" aria-checked="false" aria-label="Systemeinstellung übernehmen" title="Systemangepasst">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
+        </button>
+      </div>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="page-head__glow"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Kontakt</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Erzähl mir kurz,<br>worum es geht.</h1>
+    <p class="lead reveal" data-reveal-delay="120">
+      Ein bis zwei Sätze reichen völlig. Du bekommst innerhalb eines Werktags
+      eine Antwort mit konkreten Terminvorschlägen — unverbindlich und kostenlos.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:start;grid-template-columns:1.25fr 1fr">
+
+      <!-- Formular -->
+      <div class="reveal" id="formular">
+        <h2 class="h-2">Anfrage senden</h2>
+        <p class="body mt-s">Alle Felder mit * sind Pflichtfelder.</p>
+
+        <form class="form mt-m" data-form data-form-subject="Neue Anfrage über die MacNexus-Website" novalidate>
+          <div class="form__row">
+            <div class="field">
+              <label for="k-name">Name *</label>
+              <input type="text" id="k-name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="k-mail">E-Mail *</label>
+              <input type="email" id="k-mail" name="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label for="k-tel">Telefon (optional)</label>
+              <input type="tel" id="k-tel" name="telefon" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="k-typ">Ich bin *</label>
+              <select id="k-typ" name="kundentyp" required>
+                <option value="">Bitte auswählen</option>
+                <option>Privatperson</option>
+                <option>Unternehmen / Selbstständig</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="k-thema">Worum geht es? *</label>
+            <select id="k-thema" name="thema" required>
+              <option value="">Bitte auswählen</option>
+              <option>1:1 Support-Session (49,99 €)</option>
+              <option>Business-Erstgespräch (kostenlos)</option>
+              <option>Frage zur Academy</option>
+              <option>Kaufberatung vor einer Anschaffung</option>
+              <option>Etwas anderes</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="k-geraet">Um welches Gerät geht es? (optional)</label>
+            <input type="text" id="k-geraet" name="geraet" placeholder="z. B. iPhone 15, MacBook Air M2">
+          </div>
+
+          <div class="field">
+            <label for="k-nachricht">Dein Anliegen *</label>
+            <textarea id="k-nachricht" name="nachricht" required
+              placeholder="Beschreib kurz, was nicht funktioniert oder was du erreichen möchtest. Wenn du schon weißt, wann es dir zeitlich passt, schreib es gern dazu."></textarea>
+            <span class="field__hint">Je konkreter, desto besser kann ich die Session vorbereiten.</span>
+          </div>
+
+          <div class="field">
+            <label for="k-ort">Bevorzugte Form</label>
+            <select id="k-ort" name="ort">
+              <option>Online per Bildschirmfreigabe</option>
+              <option>Vor Ort im Bezirk Baden</option>
+              <option>Vor Ort in Wien</option>
+              <option>Egal — such du aus</option>
+            </select>
+          </div>
+
+          <label class="check">
+            <input type="checkbox" name="datenschutz" required>
+            <span>
+              Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage
+              gespeichert und verarbeitet werden. Weitere Informationen in der
+              <a href="datenschutz.html">Datenschutzerklärung</a>. *
+            </span>
+          </label>
+
+      <!-- Spamschutz: für Menschen unsichtbar, Bots füllen es aus -->
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
+             style="display:none !important" aria-hidden="true">
+          <div class="form__status" aria-live="polite"></div>
+
+          <div>
+            <button class="btn btn--primary btn--lg" type="submit">Anfrage senden</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Seitenspalte -->
+      <aside class="reveal" data-reveal-delay="120">
+        <div class="card" style="gap:22px">
+          <div>
+            <h3 style="font-size:19px">Direkt erreichen</h3>
+            <ul class="mt-s" style="display:grid;gap:12px">
+              <li class="body">
+                <span style="display:block;font-size:13px;color:var(--c-text-muted)">E-Mail</span>
+                <a href="mailto:office@macnexus.at">office@macnexus.at</a>
+              </li>
+              <li class="body">
+                <span style="display:block;font-size:13px;color:var(--c-text-muted)">Telefon</span>
+                <a href="tel:+436642112924">+43 664 2112924</a>
+              </li>
+              <li class="body">
+                <span style="display:block;font-size:13px;color:var(--c-text-muted)">Standort</span>
+                Bezirk Baden, Niederösterreich
+              </li>
+              <li class="body">
+                <span style="display:block;font-size:13px;color:var(--c-text-muted)">Erreichbarkeit</span>
+                Mo–Fr, 9–18 Uhr
+              </li>
+            </ul>
+          </div>
+
+          <div style="border-top:1px solid var(--c-border);padding-top:22px">
+            <h3 style="font-size:19px">Einzugsgebiet</h3>
+            <p class="body-sm mt-s">
+              <strong>Vor Ort:</strong> Baden, Traiskirchen, Bad Vöslau, Berndorf,
+              Pottendorf, Ebreichsdorf, Mödling und Wien.
+            </p>
+            <p class="body-sm mt-s">
+              <strong>Online:</strong> ganz Österreich — per Bildschirmfreigabe
+              funktioniert das genauso gut.
+            </p>
+          </div>
+
+          <div style="border-top:1px solid var(--c-border);padding-top:22px">
+            <h3 style="font-size:19px">Antwortzeit</h3>
+            <p class="body-sm mt-s">
+              Anfragen beantworte ich an Werktagen in der Regel innerhalb weniger
+              Stunden, spätestens am nächsten Werktag. Am Wochenende kann es
+              etwas länger dauern.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mt-m" style="background:var(--c-accent-soft);border-color:rgba(0,113,227,.2)">
+          <h3 style="font-size:18px">Du bist ein Unternehmen?</h3>
+          <p class="body-sm">
+            Dann starten wir mit einem kostenlosen 30-Minuten-Erstgespräch.
+            Wähl im Formular einfach „Business-Erstgespräch“ aus.
+          </p>
+          <a class="link-arrow" href="business.html">Business-Angebot ansehen</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+            <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name"><strong>MacNexus</strong></span>
+        </a>
+        <p class="body-sm">
+          Apple-Software-Support und Online-Kurse für Privat- und Business-Kunden.
+          Sitz im Bezirk Baden, Niederösterreich — online für ganz Österreich.
+        </p>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="support.html">1:1 Support</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="business.html">Für Unternehmen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:office@macnexus.at">office@macnexus.at</a></li>
+          <li><a href="tel:+436642112924">+43 664 2112924</a></li>
+          <li><span style="color:var(--c-text-muted)">Bezirk Baden, NÖ</span></li>
+          <li><span style="color:var(--c-text-muted)">Mo–Fr, 9–18 Uhr</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> MacNexus. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <p class="body-sm" style="margin-top:22px;font-size:12px;line-height:1.5;color:var(--c-text-muted)">
+      MacNexus ist ein unabhängiges Unternehmen und steht in keiner Verbindung zu Apple Inc.
+      Apple, Mac, iPhone, iPad und macOS sind Marken von Apple Inc.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

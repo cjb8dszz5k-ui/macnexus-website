@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Farbschema sofort setzen, damit nichts in der falschen Farbe aufblitzt */
+(function(){try{var v=localStorage.getItem("macnexus-theme");
+document.documentElement.setAttribute("data-theme",
+(v==="light"||v==="dark"||v==="system")?v:"light");}
+catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<title>Termin buchen — MacNexus</title>
+<meta name="description" content="Wähl direkt einen Termin für deine 1:1 Apple-Support-Session oder ein kostenloses Business-Erstgespräch. Bezirk Baden, Wien und online in ganz Österreich.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+        <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name"><strong>MacNexus</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <div class="nav__menu" id="nav-menu">
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="support.html">Support</a>
+        <a href="academy.html">Academy</a>
+        <a href="business.html">Business</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="buchen.html" class="is-active">Buchen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="themeswitch" role="radiogroup" aria-label="Farbschema">
+        <button type="button" class="themeswitch__btn" data-theme-btn="light"
+                role="radio" aria-checked="false" aria-label="Helles Design" title="Hell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="dark"
+                role="radio" aria-checked="false" aria-label="Dunkles Design" title="Dunkel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 019.7 3.5a8.6 8.6 0 1010.8 10.8z"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="system"
+                role="radio" aria-checked="false" aria-label="Systemeinstellung übernehmen" title="Systemangepasst">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
+        </button>
+      </div>
+      <a class="btn btn--primary nav__cta is-active" href="buchen.html">Termin buchen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head page-head--tight">
+  <div class="page-head__glow"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Terminplaner</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Such dir einen Termin aus.</h1>
+    <p class="lead reveal" data-reveal-delay="120">
+      In drei Schritten erledigt. Du bekommst die Bestätigung per E-Mail —
+      in der Regel noch am selben Tag.
+    </p>
+  </div>
+</section>
+
+<section class="section section--top-tight">
+  <div class="wrap">
+    <div class="planer" data-planer>
+
+      <!-- Fortschritt -->
+      <ol class="stufen" aria-label="Fortschritt">
+        <li class="stufen__item is-active" data-stufe="1"><span>1</span> Termin-Art</li>
+        <li class="stufen__item" data-stufe="2"><span>2</span> Tag &amp; Uhrzeit</li>
+        <li class="stufen__item" data-stufe="3"><span>3</span> Deine Daten</li>
+      </ol>
+
+      <!-- ---------- Schritt 1 ---------- -->
+      <div data-schritt="1">
+        <h2 class="h-3 center">Worum geht es?</h2>
+        <div class="artwahl">
+
+          <button type="button" class="artcard" data-art="support">
+            <span class="artcard__preis">49,99 €</span>
+            <h3>1:1 Support-Session</h3>
+            <p class="artcard__meta">60 Minuten · online oder vor Ort</p>
+            <p class="body-sm">
+              Ein konkretes Thema, sauber gelöst und so erklärt, dass du es
+              beim nächsten Mal selbst kannst.
+            </p>
+            <span class="artcard__cta">Auswählen ›</span>
+          </button>
+
+          <button type="button" class="artcard" data-art="business">
+            <span class="artcard__preis artcard__preis--frei">kostenlos</span>
+            <h3>Business-Erstgespräch</h3>
+            <p class="artcard__meta">30 Minuten · online</p>
+            <p class="body-sm">
+              Für Unternehmen: unverbindlich klären, wo es hakt und was
+              sinnvoll wäre. Ohne Verkaufsdruck.
+            </p>
+            <span class="artcard__cta">Auswählen ›</span>
+          </button>
+
+        </div>
+
+        <p class="planer__hinweis center">
+          Nicht sicher, was passt? <a href="kontakt.html">Schreib mir kurz</a> —
+          ich sag dir ehrlich, ob und wie ich helfen kann.
+        </p>
+      </div>
+
+      <!-- ---------- Schritt 2 ---------- -->
+      <div data-schritt="2" hidden>
+        <div class="planer__kopf">
+          <button type="button" class="linkback" data-zurueck="1">‹ Zurück</button>
+          <div class="planer__gewaehlt">
+            <strong data-zf-art>—</strong>
+            <span data-zf-dauer>—</span>
+          </div>
+        </div>
+
+        <div class="planer__split">
+          <div class="kal">
+            <div class="kal__kopf">
+              <button type="button" class="kal__nav" data-kalender-prev aria-label="Vorheriger Monat">‹</button>
+              <strong data-kalender-label>—</strong>
+              <button type="button" class="kal__nav" data-kalender-next aria-label="Nächster Monat">›</button>
+            </div>
+            <div class="kal__grid" data-kalender-grid role="grid"></div>
+            <p class="kal__legende">
+              <span class="kal__punkt"></span> verfügbare Tage
+            </p>
+          </div>
+
+          <div class="slotbox">
+            <p class="slotbox__kopf" data-slots-kopf>Wähl zuerst einen Tag aus.</p>
+            <div class="slotbox__liste" data-slots></div>
+          </div>
+        </div>
+
+        <div class="planer__fuss">
+          <p class="planer__zf">Gewählt: <strong data-zf-termin>noch nicht gewählt</strong></p>
+          <button type="button" class="btn btn--primary btn--lg" data-weiter disabled>Weiter</button>
+        </div>
+      </div>
+
+      <!-- ---------- Schritt 3 ---------- -->
+      <div data-schritt="3" hidden>
+        <div class="planer__kopf">
+          <button type="button" class="linkback" data-zurueck="2">‹ Anderen Termin wählen</button>
+        </div>
+
+        <div class="planer__split planer__split--form">
+          <form class="form" data-form novalidate>
+            <h2 class="h-3">Fast geschafft</h2>
+            <p class="body mt-s" style="margin-bottom:26px">
+              Damit ich die Session vorbereiten kann, brauche ich nur noch
+              ein paar Angaben.
+            </p>
+
+            <input type="hidden" name="termin_art" value="">
+            <input type="hidden" name="termin_datum" value="">
+            <input type="hidden" name="termin_zeit" value="">
+            <input type="hidden" name="termin_kurz" value="">
+
+            <div class="form__row">
+              <div class="field">
+                <label for="b-name">Name *</label>
+                <input type="text" id="b-name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="b-mail">E-Mail *</label>
+                <input type="email" id="b-mail" name="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="b-tel">Telefon (optional)</label>
+                <input type="tel" id="b-tel" name="telefon" autocomplete="tel">
+              </div>
+              <div class="field">
+                <label for="b-ort">Wie möchtest du das machen? *</label>
+                <select id="b-ort" name="ort" required>
+                  <option value="">Bitte auswählen</option>
+                  <option>Online per Bildschirmfreigabe</option>
+                  <option>Vor Ort im Bezirk Baden</option>
+                  <option>Vor Ort in Wien</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="b-geraet">Um welches Gerät geht es? (optional)</label>
+              <input type="text" id="b-geraet" name="geraet" placeholder="z. B. iPhone 15, MacBook Air M2">
+            </div>
+
+            <div class="field">
+              <label for="b-anliegen">Dein Anliegen *</label>
+              <textarea id="b-anliegen" name="nachricht" required
+                placeholder="Beschreib kurz, was nicht funktioniert oder was du erreichen möchtest."></textarea>
+              <span class="field__hint">Je konkreter, desto besser kann ich mich vorbereiten.</span>
+            </div>
+
+            <label class="check">
+              <input type="checkbox" name="datenschutz" required>
+              <span>
+                Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage
+                gespeichert und verarbeitet werden. Weitere Informationen in der
+                <a href="datenschutz.html">Datenschutzerklärung</a>. *
+              </span>
+            </label>
+
+            <!-- Spamschutz: für Menschen unsichtbar, Bots füllen es aus -->
+            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
+                   style="display:none !important" aria-hidden="true">
+
+            <div class="form__status" aria-live="polite"></div>
+
+            <div>
+              <button class="btn btn--primary btn--lg" type="submit">Termin anfragen</button>
+            </div>
+          </form>
+
+          <aside class="buchbox">
+            <h3 class="buchbox__titel">Deine Auswahl</h3>
+            <dl class="buchbox__liste">
+              <dt>Termin-Art</dt>
+              <dd data-zf-art>—</dd>
+              <dt>Umfang</dt>
+              <dd data-zf-dauer>—</dd>
+              <dt>Wann</dt>
+              <dd data-zf-termin>noch nicht gewählt</dd>
+            </dl>
+            <p class="buchbox__note">
+              Du bekommst zuerst eine Bestätigung von mir — erst dann ist der
+              Termin fix. Kostenlos verschieben oder absagen kannst du bis
+              24 Stunden vorher.
+            </p>
+          </aside>
+        </div>
+      </div>
+
+      <!-- ---------- Schritt 4: Erfolg ---------- -->
+      <div data-schritt="4" hidden>
+        <div class="erfolg">
+          <div class="erfolg__icon" aria-hidden="true">
+            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="26" cy="26" r="25" stroke="var(--c-accent)" stroke-width="2" opacity="0.3"/>
+              <path d="M16 27l7 7 14-15" stroke="var(--c-accent)" stroke-width="3"
+                    fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2 class="h-2">Anfrage ist angekommen</h2>
+          <p class="lead mt-m">
+            <strong data-erfolg-art>Termin</strong> am
+            <strong data-erfolg-termin>—</strong>
+          </p>
+          <p class="body-lg mt-m">
+            Ich schaue mir deine Anfrage an und bestätige den Termin per E-Mail —
+            in der Regel noch am selben Tag, spätestens am nächsten Werktag.
+            Sollte der Slot inzwischen vergeben sein, schlage ich dir sofort
+            eine Alternative vor.
+          </p>
+          <div class="erfolg__kal">
+            <p>Trag dir den Termin gleich ein, damit du ihn nicht vergisst:</p>
+            <button type="button" class="btn btn--ghost" data-ics>
+              Zum Kalender hinzufügen
+            </button>
+          </div>
+
+          <div class="btn-row center mt-l">
+            <a class="btn btn--primary" href="index.html">Zur Startseite</a>
+            <a class="btn btn--ghost" href="academy.html">Academy ansehen</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Vertrauen -->
+<section class="section section--elev">
+  <div class="wrap">
+    <div class="grid grid--3">
+      <div class="card card--plain reveal">
+        <h3>Kein Risiko</h3>
+        <p class="body">
+          Stellt sich heraus, dass dein Anliegen nicht in meinen Bereich fällt,
+          verrechne ich nichts.
+        </p>
+      </div>
+      <div class="card card--plain reveal" data-reveal-delay="80">
+        <h3>Flexibel</h3>
+        <p class="body">
+          Bis 24 Stunden vor dem Termin kannst du kostenlos verschieben
+          oder absagen.
+        </p>
+      </div>
+      <div class="card card--plain reveal" data-reveal-delay="160">
+        <h3>Klarer Preis</h3>
+        <p class="body">
+          49,99 € pro Session — vorher bekannt, keine versteckten Zusatzkosten.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+            <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name"><strong>MacNexus</strong></span>
+        </a>
+        <p class="body-sm">
+          Apple-Software-Support und Online-Kurse für Privat- und Business-Kunden.
+          Sitz im Bezirk Baden, Niederösterreich — online für ganz Österreich.
+        </p>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="support.html">1:1 Support</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="business.html">Für Unternehmen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="buchen.html">Termin buchen</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:office@macnexus.at">office@macnexus.at</a></li>
+          <li><a href="tel:+436642112924">+43 664 2112924</a></li>
+          <li><span style="color:var(--c-text-muted)">Bezirk Baden, NÖ</span></li>
+          <li><span style="color:var(--c-text-muted)">Mo–Fr, 9–18 Uhr</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> MacNexus. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <p class="body-sm" style="margin-top:22px;font-size:12px;line-height:1.5;color:var(--c-text-muted)">
+      MacNexus ist ein unabhängiges Unternehmen und steht in keiner Verbindung zu Apple Inc.
+      Apple, Mac, iPhone, iPad und macOS sind Marken von Apple Inc.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/booking.js"></script>
+</body>
+</html>

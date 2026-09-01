@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Farbschema sofort setzen, damit nichts in der falschen Farbe aufblitzt */
+(function(){try{var v=localStorage.getItem("macnexus-theme");
+document.documentElement.setAttribute("data-theme",
+(v==="light"||v==="dark"||v==="system")?v:"light");}
+catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<title>Apple-Support für Unternehmen — MacNexus Business</title>
+<meta name="description" content="Apple-Betreuung für kleine Unternehmen ohne eigene IT: Geräte-Setup, Team-Workflows, Datensicherheit und ein fester Ansprechpartner. Baden, Wien, Österreich.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+        <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name"><strong>MacNexus</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <div class="nav__menu" id="nav-menu">
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="support.html">Support</a>
+        <a href="academy.html">Academy</a>
+        <a href="business.html" class="is-active">Business</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="themeswitch" role="radiogroup" aria-label="Farbschema">
+        <button type="button" class="themeswitch__btn" data-theme-btn="light"
+                role="radio" aria-checked="false" aria-label="Helles Design" title="Hell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="dark"
+                role="radio" aria-checked="false" aria-label="Dunkles Design" title="Dunkel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 019.7 3.5a8.6 8.6 0 1010.8 10.8z"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="system"
+                role="radio" aria-checked="false" aria-label="Systemeinstellung übernehmen" title="Systemangepasst">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
+        </button>
+      </div>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="page-head__glow"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Business</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Apple im Team —<br>ohne eigene IT-Abteilung.</h1>
+    <p class="lead reveal" data-reveal-delay="120">
+      Kleine Unternehmen arbeiten immer öfter mit Mac, iPhone und iPad — haben
+      aber niemanden, der sich darum kümmert. MacNexus ist dieser jemand:
+      ein fester Ansprechpartner statt anonymer Hotline.
+    </p>
+    <div class="btn-row mt-m reveal" data-reveal-delay="180">
+      <a class="btn btn--primary btn--lg" href="buchen.html" data-booking="business" data-booking-label="Erstgespräch buchen">Unverbindlich anfragen</a>
+      <a class="link-arrow" href="#leistungen">Leistungen ansehen</a>
+    </div>
+  </div>
+</section>
+
+<!-- Für wen -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <h2 class="h-2">Für wen das gedacht ist</h2>
+        <p class="lead mt-s">
+          Für Betriebe zwischen zwei und rund zwanzig Personen, bei denen
+          IT-Themen bisher nebenbei bei jemandem mitlaufen, der eigentlich
+          etwas anderes zu tun hat.
+        </p>
+        <ul class="ticks mt-m">
+          <li>Agenturen, Studios und Kreativbetriebe, die ohnehin auf Mac arbeiten</li>
+          <li>Ordinationen, Kanzleien und Praxen mit hohen Anforderungen an Datenschutz</li>
+          <li>Handels- und Dienstleistungsbetriebe mit iPads im Einsatz</li>
+          <li>Start-ups, die von Anfang an sauber aufsetzen wollen</li>
+          <li>Familienbetriebe, bei denen bisher „der Neffe“ die IT gemacht hat</li>
+        </ul>
+      </div>
+
+      <div class="split__visual reveal" data-reveal-delay="120" aria-hidden="true">
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- zentraler Knoten mit Geräten -->
+          <rect x="152" y="122" width="96" height="56" rx="12" fill="var(--c-accent)" opacity="0.12" stroke="var(--c-accent)" stroke-width="1.5"/>
+          <path d="M186 158v-24l14 16 14-16v24" stroke="var(--c-accent)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <path d="M200 122 L 96 74"  stroke="var(--c-border-strong)" stroke-width="1.3"/>
+          <path d="M200 122 L 304 74" stroke="var(--c-border-strong)" stroke-width="1.3"/>
+          <path d="M200 178 L 96 232"  stroke="var(--c-border-strong)" stroke-width="1.3"/>
+          <path d="M200 178 L 304 232" stroke="var(--c-border-strong)" stroke-width="1.3"/>
+
+          <rect x="52" y="48" width="88" height="54" rx="8" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+          <rect x="62" y="60" width="46" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="62" y="72" width="64" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+          <rect x="62" y="82" width="52" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+
+          <rect x="260" y="48" width="88" height="54" rx="8" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+          <rect x="270" y="60" width="46" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="270" y="72" width="64" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+          <rect x="270" y="82" width="52" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+
+          <rect x="52" y="200" width="88" height="54" rx="8" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+          <rect x="62" y="212" width="46" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="62" y="224" width="64" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+          <rect x="62" y="234" width="52" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+
+          <rect x="260" y="200" width="88" height="54" rx="8" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+          <rect x="270" y="212" width="46" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="270" y="224" width="64" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+          <rect x="270" y="234" width="52" height="4" rx="2" fill="var(--c-text-muted)" opacity="0.22"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leistungen -->
+<section class="section section--elev" id="leistungen">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Leistungen</span>
+      <h2 class="h-1">Worum ich mich kümmere</h2>
+      <p class="lead">
+        Alles auf Software-Ebene — von der ersten Einrichtung bis zum
+        laufenden Betrieb.
+      </p>
+    </div>
+
+    <div class="grid grid--3">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/>
+          </svg>
+        </div>
+        <h3>Geräte-Setup</h3>
+        <p class="body">
+          Neue Macs, iPhones und iPads einheitlich einrichten — mit denselben
+          Einstellungen, Apps und Zugängen, damit jedes Gerät im Betrieb
+          gleich funktioniert.
+        </p>
+      </div>
+
+      <div class="card reveal" data-reveal-delay="80">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3l8 3v6c0 4.2-3.1 7.6-8 9-4.9-1.4-8-4.8-8-9V6z"/><path d="M9 12l2 2 4-4"/>
+          </svg>
+        </div>
+        <h3>Daten &amp; Sicherheit</h3>
+        <p class="body">
+          Backups, die tatsächlich laufen. Passwortverwaltung im Team,
+          Zwei-Faktor-Authentifizierung, sinnvolle Zugriffsrechte —
+          und ein Plan für den Fall, dass ein Gerät verloren geht.
+        </p>
+      </div>
+
+      <div class="card reveal" data-reveal-delay="160">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/>
+            <circle cx="17" cy="9" r="2.5"/><path d="M15.5 20a5.5 5.5 0 0 1 5.5-5.5"/>
+          </svg>
+        </div>
+        <h3>Team-Workflows</h3>
+        <p class="body">
+          Gemeinsame Ablage, Kalender und Mail-Konten so aufsetzen, dass
+          Zusammenarbeit funktioniert — ohne dass Dateien in fünf
+          verschiedenen Clouds verstreut liegen.
+        </p>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </div>
+        <h3>Onboarding &amp; Offboarding</h3>
+        <p class="body">
+          Neue Mitarbeiter:innen bekommen ein fertig eingerichtetes Gerät.
+          Beim Ausscheiden werden Zugänge sauber entzogen und Daten gesichert —
+          nach einem festen Ablauf statt aus dem Bauch heraus.
+        </p>
+      </div>
+
+      <div class="card reveal" data-reveal-delay="80">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 9 12 4 2 9l10 5z"/><path d="M6 11.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/>
+          </svg>
+        </div>
+        <h3>Team-Schulungen</h3>
+        <p class="body">
+          Kompakte Schulungen für dein Team — damit nicht bei jeder Kleinigkeit
+          jemand gerufen werden muss. Auf euren tatsächlichen Arbeitsalltag
+          zugeschnitten, nicht von der Stange.
+        </p>
+      </div>
+
+      <div class="card reveal" data-reveal-delay="160">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+          </svg>
+        </div>
+        <h3>Laufende Betreuung</h3>
+        <p class="body">
+          Wenn etwas nicht funktioniert, meldest du dich direkt bei mir —
+          keine Ticketnummer, kein Warteschleifen-Menü. Ich kenne euer Setup
+          und muss nicht jedes Mal von vorne fragen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modelle -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Zusammenarbeit</span>
+      <h2 class="h-1">Zwei Wege, das anzugehen</h2>
+      <p class="lead">
+        Je nachdem, ob ihr ein einmaliges Projekt habt oder dauerhaft
+        jemanden an eurer Seite wollt.
+      </p>
+    </div>
+
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <div>
+          <h3 class="h-3">Projekt</h3>
+          <p class="body-sm mt-s">Ein klar abgegrenztes Vorhaben, einmal sauber erledigt.</p>
+        </div>
+        <div class="price-card__amount">
+          <b>Nach Aufwand</b>
+        </div>
+        <ul class="ticks">
+          <li>Kostenloses Erstgespräch zur Einschätzung</li>
+          <li>Schriftliches Angebot mit fixem Rahmen vorab</li>
+          <li>Typisch: Neuaufsetzen der Geräte, Umstieg, Backup-Konzept</li>
+          <li>Dokumentation des Setups zum Nachschlagen</li>
+        </ul>
+        <a class="btn btn--ghost btn--block" href="kontakt.html">Projekt besprechen</a>
+      </div>
+
+      <div class="price-card price-card--featured reveal" data-reveal-delay="100">
+        <span class="price-card__tag">Für laufenden Bedarf</span>
+        <div>
+          <h3 class="h-3">Betreuung</h3>
+          <p class="body-sm mt-s">Ein fester Ansprechpartner, planbar im Monat.</p>
+        </div>
+        <div class="price-card__amount">
+          <b>Individuell</b>
+          <span>je nach Teamgröße</span>
+        </div>
+        <ul class="ticks">
+          <li>Fixes Stundenkontingent pro Monat</li>
+          <li>Bevorzugte Reaktionszeit bei Störungen</li>
+          <li>Regelmäßiger Check der Backups und Zugänge</li>
+          <li>Beratung vor Neuanschaffungen inklusive</li>
+          <li>Keine lange Bindung — monatlich kündbar</li>
+        </ul>
+        <a class="btn btn--primary btn--block" href="kontakt.html">Angebot anfragen</a>
+      </div>
+    </div>
+
+    <p class="body-sm center mt-l reveal">
+      Beide Varianten starten mit einem kostenlosen, unverbindlichen Erstgespräch —
+      damit wir beide wissen, ob es passt.
+    </p>
+  </div>
+</section>
+
+<!-- Ablauf -->
+<section class="section section--ink">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Erste Schritte</span>
+      <h2 class="h-1">So starten wir</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.10)">
+        <div class="step__num" style="background:#fff;color:#1d1d1f">1</div>
+        <h3 style="color:var(--c-on-ink)">Erstgespräch</h3>
+        <p class="body" style="color:var(--c-on-ink-muted)">
+          30 Minuten, kostenlos und unverbindlich. Ich kläre mit euch, wie ihr aktuell
+          arbeitet, wo es hakt und ob ich der richtige Ansprechpartner bin.
+        </p>
+      </div>
+      <div class="step reveal" data-reveal-delay="100" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.10)">
+        <div class="step__num" style="background:#fff;color:#1d1d1f">2</div>
+        <h3 style="color:var(--c-on-ink)">Bestandsaufnahme</h3>
+        <p class="body" style="color:var(--c-on-ink-muted)">
+          Ich schaue mir euer Setup an — Geräte, Konten, Ablage, Backups —
+          und sage euch klar, was gut läuft und was dringend ist.
+        </p>
+      </div>
+      <div class="step reveal" data-reveal-delay="200" style="background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.10)">
+        <div class="step__num" style="background:#fff;color:#1d1d1f">3</div>
+        <h3 style="color:var(--c-on-ink)">Umsetzung</h3>
+        <p class="body" style="color:var(--c-on-ink-muted)">
+          Ich arbeite die Punkte nach Priorität ab — mit möglichst wenig
+          Unterbrechung eures Tagesgeschäfts. Danach entscheidet ihr, ob eine
+          laufende Betreuung Sinn ergibt.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Fragen von Unternehmen</span>
+      <h2 class="h-1">Gut zu wissen</h2>
+    </div>
+
+    <div class="faq reveal">
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Wir haben auch Windows-Rechner im Einsatz. Geht das trotzdem?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            In einer gemischten Umgebung kümmere ich mich um die Apple-Seite
+            und darum, dass sie mit dem Rest sauber zusammenspielt — etwa bei
+            gemeinsamer Ablage, Mail und Kalendern. Reine Windows-Server-Themen
+            sind nicht mein Bereich; da sage ich es euch ehrlich.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Wie schnell seid ihr erreichbar, wenn etwas ausfällt?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Anfragen beantworte ich an Werktagen in der Regel innerhalb weniger
+            Stunden. Für Betreuungskunden gibt es eine vereinbarte, bevorzugte
+            Reaktionszeit — was konkret machbar ist, halten wir vorher schriftlich
+            fest, statt es zu versprechen und dann nicht zu halten.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Kauft ihr auch die Geräte für uns ein?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Ich verkaufe keine Hardware — genau deshalb ist meine Empfehlung
+            unabhängig. Ich sage euch, welche Geräte und welche Ausstattung
+            für euren Bedarf sinnvoll sind, und ihr kauft dort, wo es für
+            euch am besten passt.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Arbeitet ihr auch außerhalb von Baden und Wien?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Ja. Der Schwerpunkt für Vor-Ort-Termine liegt im Bezirk Baden, in Wien
+            und im Umland. Vieles lässt sich aber ohnehin remote erledigen —
+            damit ist österreichweite Betreuung problemlos möglich.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Wie sieht es mit Vertraulichkeit aus?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Selbstverständlich vertraulich — auf Wunsch mit unterschriebener
+            Verschwiegenheitserklärung, bevor ich Zugriff auf irgendetwas bekomme.
+            Gerade bei Kanzleien und Ordinationen ist das der Normalfall.
+          </p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band__glow"></div>
+      <h2 class="h-1">Reden wir 30 Minuten darüber.</h2>
+      <p class="lead">
+        Kostenlos, unverbindlich und ohne Verkaufsgespräch. Danach wisst ihr,
+        wo ihr steht — auch wenn wir am Ende nicht zusammenarbeiten.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--on-ink btn--lg" href="buchen.html" data-booking="business" data-booking-label="Erstgespräch buchen">Erstgespräch anfragen</a>
+        <p class="booking-alt" data-booking-alt hidden>Oder <a href="kontakt.html">schreib mir zuerst</a>, wenn du lieber Details vorab klärst.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+            <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name"><strong>MacNexus</strong></span>
+        </a>
+        <p class="body-sm">
+          Apple-Software-Support und Online-Kurse für Privat- und Business-Kunden.
+          Sitz im Bezirk Baden, Niederösterreich — online für ganz Österreich.
+        </p>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="support.html">1:1 Support</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="business.html">Für Unternehmen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:office@macnexus.at">office@macnexus.at</a></li>
+          <li><a href="tel:+436642112924">+43 664 2112924</a></li>
+          <li><span style="color:var(--c-text-muted)">Bezirk Baden, NÖ</span></li>
+          <li><span style="color:var(--c-text-muted)">Mo–Fr, 9–18 Uhr</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> MacNexus. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <p class="body-sm" style="margin-top:22px;font-size:12px;line-height:1.5;color:var(--c-text-muted)">
+      MacNexus ist ein unabhängiges Unternehmen und steht in keiner Verbindung zu Apple Inc.
+      Apple, Mac, iPhone, iPad und macOS sind Marken von Apple Inc.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

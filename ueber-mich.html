@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Farbschema sofort setzen, damit nichts in der falschen Farbe aufblitzt */
+(function(){try{var v=localStorage.getItem("macnexus-theme");
+document.documentElement.setAttribute("data-theme",
+(v==="light"||v==="dark"||v==="system")?v:"light");}
+catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<title>Über MacNexus — Apple-Support aus dem Bezirk Baden</title>
+<meta name="description" content="Wer hinter MacNexus steht: Apple-Software-Support für Privat- und Business-Kunden aus dem Bezirk Baden, Niederösterreich — persönlich, unabhängig und verständlich.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+        <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name"><strong>MacNexus</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <div class="nav__menu" id="nav-menu">
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="support.html">Support</a>
+        <a href="academy.html">Academy</a>
+        <a href="business.html">Business</a>
+        <a href="ueber-mich.html" class="is-active">Über mich</a>
+        <a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="themeswitch" role="radiogroup" aria-label="Farbschema">
+        <button type="button" class="themeswitch__btn" data-theme-btn="light"
+                role="radio" aria-checked="false" aria-label="Helles Design" title="Hell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="dark"
+                role="radio" aria-checked="false" aria-label="Dunkles Design" title="Dunkel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 019.7 3.5a8.6 8.6 0 1010.8 10.8z"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="system"
+                role="radio" aria-checked="false" aria-label="Systemeinstellung übernehmen" title="Systemangepasst">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
+        </button>
+      </div>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="page-head__glow"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Über mich</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Technik soll<br>einfach funktionieren.</h1>
+    <p class="lead reveal" data-reveal-delay="120">
+      MacNexus ist aus einer simplen Beobachtung entstanden: Apple-Geräte sind
+      großartig — aber wenn etwas nicht klappt, steht man ziemlich allein da.
+      Genau da setze ich an.
+    </p>
+  </div>
+</section>
+
+<!-- Story -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <!-- TODO: Hier deine persönliche Geschichte einsetzen (Name, Werdegang, Erfahrung). -->
+        <h2 class="h-2">Warum es MacNexus gibt</h2>
+        <p class="body-lg mt-m">
+          Wer heute ein Problem mit seinem iPhone oder Mac hat, landet meist in
+          einer von drei Sackgassen: einem Forum voller widersprüchlicher Ratschläge,
+          einer Hotline, die einen Standardablauf abarbeitet, oder bei jemandem
+          aus dem Bekanntenkreis, der „sich auskennt“ und es irgendwie hinbiegt.
+        </p>
+        <p class="body-lg mt-s">
+          Das Ergebnis ist fast immer dasselbe: Das Problem ist vielleicht weg,
+          aber man versteht nicht, warum — und beim nächsten Mal steht man wieder
+          am selben Punkt.
+        </p>
+        <p class="body-lg mt-s">
+          MacNexus macht es anders. Ich nehme mir die Zeit, ein Thema wirklich
+          zu lösen und dabei zu erklären, was passiert. Nicht, damit du mich
+          wieder brauchst — sondern damit du es beim nächsten Mal selbst kannst.
+        </p>
+      </div>
+
+      <div class="split__visual reveal" data-reveal-delay="120" aria-hidden="true">
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="60" y="52" width="280" height="196" rx="16" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+          <rect x="60" y="52" width="280" height="34" rx="16" fill="var(--c-bg-elev)"/>
+          <rect x="60" y="72" width="280" height="14" fill="var(--c-bg-elev)"/>
+          <circle cx="82" cy="69" r="4" fill="var(--c-text-muted)" opacity="0.4"/>
+          <circle cx="96" cy="69" r="4" fill="var(--c-text-muted)" opacity="0.26"/>
+          <circle cx="110" cy="69" r="4" fill="var(--c-text-muted)" opacity="0.26"/>
+
+          <!-- Chat: Frage -->
+          <rect x="82" y="104" width="150" height="42" rx="12" fill="var(--c-bg-elev)"/>
+          <rect x="96" y="116" width="106" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.3"/>
+          <rect x="96" y="128" width="78" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.22"/>
+
+          <!-- Chat: Antwort -->
+          <rect x="152" y="158" width="166" height="56" rx="12" fill="var(--c-accent)" opacity="0.14"/>
+          <rect x="168" y="170" width="122" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.55"/>
+          <rect x="168" y="182" width="134" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="168" y="194" width="96" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
+
+          <!-- Häkchen -->
+          <circle cx="104" cy="222" r="14" fill="var(--c-accent)" opacity="0.16"/>
+          <path d="M97 222l5 5 9-10" stroke="var(--c-accent)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Werte -->
+<section class="section section--elev">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Haltung</span>
+      <h2 class="h-1">Vier Dinge, die mir wichtig sind</h2>
+    </div>
+
+    <div class="grid grid--2">
+      <div class="card reveal">
+        <h3>Verständlich statt beeindruckend</h3>
+        <p class="body">
+          Fachbegriffe sind einfach — verständlich erklären ist schwer.
+          Ich nehme mir die Mühe. Wenn du nach einer Session nicht weißt,
+          was ich gemacht habe, habe ich meinen Job nicht gut gemacht.
+        </p>
+      </div>
+      <div class="card reveal" data-reveal-delay="80">
+        <h3>Ehrlich, auch wenn's unbequem ist</h3>
+        <p class="body">
+          Wenn dein Anliegen nicht in meinen Bereich fällt, sage ich das —
+          und verrechnen dafür nichts. Wenn ein Gerät nicht mehr zu retten ist,
+          hörst du das von mir, statt Geld in eine Sackgasse zu stecken.
+        </p>
+      </div>
+      <div class="card reveal" data-reveal-delay="160">
+        <h3>Unabhängig</h3>
+        <p class="body">
+          Ich verkaufe keine Hardware und bekomme keine Provisionen.
+          Eine Empfehlung ist deshalb genau das: eine Empfehlung —
+          und kein verstecktes Verkaufsgespräch.
+        </p>
+      </div>
+      <div class="card reveal" data-reveal-delay="240">
+        <h3>Regional erreichbar</h3>
+        <p class="body">
+          Ich sitze im Bezirk Baden und arbeite für Menschen und Betriebe
+          in Niederösterreich und Wien. Das heißt kurze Wege, echte Termine
+          und ein Ansprechpartner mit Namen und Gesicht.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Grenzen -->
+<section class="section">
+  <div class="wrap wrap--narrow center">
+    <div class="reveal">
+      <span class="eyebrow">Klare Grenzen</span>
+      <h2 class="h-2">Was ich bewusst nicht mache</h2>
+      <p class="lead mt-m">
+        Spezialisierung heißt auch, Dinge nicht anzubieten. Bei MacNexus gibt es
+        <strong>keine Hardware-Reparaturen</strong> — kein Display-, kein Akkutausch,
+        keine Löt- oder Wasserschadenarbeiten. Dafür gibt es autorisierte
+        Servicepartner, die das besser können.
+      </p>
+      <p class="lead mt-s">
+        Was übrig bleibt, mache ich dafür richtig: alles, was auf deinem
+        Gerät passiert, sobald es eingeschaltet ist.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band__glow"></div>
+      <h2 class="h-1">Klingt nach dem, was du suchst?</h2>
+      <p class="lead">
+        Dann schreib mir kurz, worum es geht. Antwort kommt innerhalb
+        eines Werktags.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--on-ink btn--lg" href="kontakt.html">Kontakt aufnehmen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+            <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name"><strong>MacNexus</strong></span>
+        </a>
+        <p class="body-sm">
+          Apple-Software-Support und Online-Kurse für Privat- und Business-Kunden.
+          Sitz im Bezirk Baden, Niederösterreich — online für ganz Österreich.
+        </p>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="support.html">1:1 Support</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="business.html">Für Unternehmen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:office@macnexus.at">office@macnexus.at</a></li>
+          <li><a href="tel:+436642112924">+43 664 2112924</a></li>
+          <li><span style="color:var(--c-text-muted)">Bezirk Baden, NÖ</span></li>
+          <li><span style="color:var(--c-text-muted)">Mo–Fr, 9–18 Uhr</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> MacNexus. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <p class="body-sm" style="margin-top:22px;font-size:12px;line-height:1.5;color:var(--c-text-muted)">
+      MacNexus ist ein unabhängiges Unternehmen und steht in keiner Verbindung zu Apple Inc.
+      Apple, Mac, iPhone, iPad und macOS sind Marken von Apple Inc.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

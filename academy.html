@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Farbschema sofort setzen, damit nichts in der falschen Farbe aufblitzt */
+(function(){try{var v=localStorage.getItem("macnexus-theme");
+document.documentElement.setAttribute("data-theme",
+(v==="light"||v==="dark"||v==="system")?v:"light");}
+catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<title>MacNexus Academy — Apple Online-Kurse aus der Praxis</title>
+<meta name="description" content="Online-Kurse rund um Apple: iPhone, Mac, iCloud, Datensicherung und Produktivität. Einzeln kaufbar ab 30 €, jederzeit abrufbar, kein Abo.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+        <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name"><strong>MacNexus</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <div class="nav__menu" id="nav-menu">
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="support.html">Support</a>
+        <a href="academy.html" class="is-active">Academy</a>
+        <a href="business.html">Business</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="themeswitch" role="radiogroup" aria-label="Farbschema">
+        <button type="button" class="themeswitch__btn" data-theme-btn="light"
+                role="radio" aria-checked="false" aria-label="Helles Design" title="Hell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="dark"
+                role="radio" aria-checked="false" aria-label="Dunkles Design" title="Dunkel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 019.7 3.5a8.6 8.6 0 1010.8 10.8z"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="system"
+                role="radio" aria-checked="false" aria-label="Systemeinstellung übernehmen" title="Systemangepasst">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
+        </button>
+      </div>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="page-head__glow"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Academy</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Apple verstehen —<br>in deinem Tempo.</h1>
+    <p class="lead reveal" data-reveal-delay="120">
+      Kompakte Online-Kurse aus echter Support-Praxis. Kein Abo, keine
+      Endlos-Videos: jeder Kurs ist einzeln kaufbar, klar strukturiert
+      und dauerhaft für dich abrufbar.
+    </p>
+    <div class="btn-row mt-m reveal" data-reveal-delay="180">
+      <a class="btn btn--primary btn--lg" href="#kurse">Kurse ansehen</a>
+      <a class="link-arrow" href="#warteliste">Auf die Warteliste</a>
+    </div>
+  </div>
+</section>
+
+<!-- Prinzipien -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="grid grid--3">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+          </svg>
+        </div>
+        <h3>Kurz gehalten</h3>
+        <p class="body">
+          Lektionen von 5 bis 15 Minuten, die du auch zwischendurch schaffst.
+          Keine künstlich gestreckte Laufzeit, damit ein Kurs „wertvoll“ aussieht.
+        </p>
+      </div>
+      <div class="card reveal" data-reveal-delay="90">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19V6a2 2 0 0 1 2-2h9l5 5v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/>
+            <path d="M15 4v5h5"/><path d="M8 13h7"/><path d="M8 17h5"/>
+          </svg>
+        </div>
+        <h3>Aus der Praxis</h3>
+        <p class="body">
+          Die Inhalte entstehen aus echten Support-Fällen — den Fragen, die
+          tatsächlich immer wieder gestellt werden. Nicht aus einem Lehrbuch.
+        </p>
+      </div>
+      <div class="card reveal" data-reveal-delay="180">
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="4" y="10" width="16" height="11" rx="2"/>
+            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+          </svg>
+        </div>
+        <h3>Einmal zahlen</h3>
+        <p class="body">
+          Du kaufst einen Kurs — und behältst den Zugriff. Kein Abo, keine
+          automatische Verlängerung, keine Kündigungsfristen.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kurse -->
+<section class="section section--elev" id="kurse">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kursprogramm</span>
+      <h2 class="h-1">Diese Kurse entstehen gerade</h2>
+      <p class="lead">
+        Die Academy startet mit vier Kursen. Trag dich unten in die Warteliste ein,
+        dann erfährst du als Erste:r, sobald einer davon live geht.
+      </p>
+    </div>
+
+    <div class="grid grid--2">
+
+      <article class="course reveal">
+        <div class="course__thumb" aria-hidden="true">
+          <svg viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="118" y="24" width="84" height="152" rx="16" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+            <rect x="127" y="33" width="66" height="134" rx="10" fill="var(--c-accent)" opacity="0.07"/>
+            <rect x="140" y="40" width="24" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.35"/>
+            <rect x="137" y="60" width="28" height="28" rx="7" fill="var(--c-accent)" opacity="0.30"/>
+            <rect x="171" y="60" width="28" height="28" rx="7" fill="var(--c-text-muted)" opacity="0.14"/>
+            <rect x="137" y="96" width="28" height="28" rx="7" fill="var(--c-text-muted)" opacity="0.14"/>
+            <rect x="171" y="96" width="28" height="28" rx="7" fill="var(--c-accent)" opacity="0.18"/>
+            <rect x="137" y="140" width="62" height="18" rx="9" fill="var(--c-accent)" opacity="0.25"/>
+            <path d="M60 100h44M104 100l-8-6M104 100l-8 6" stroke="var(--c-accent)" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+            <path d="M260 100h-44M216 100l8-6M216 100l8 6" stroke="var(--c-accent)" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="course__body">
+          <div class="course__meta">
+            <span class="tag tag--soon">In Arbeit</span>
+            <span>Für Einsteiger:innen</span>
+          </div>
+          <h3>Das iPhone von Anfang an richtig einrichten</h3>
+          <p class="body-sm">
+            Vom ersten Einschalten bis zum fertig konfigurierten Gerät:
+            Apple-ID, Datenübernahme, Einstellungen, die wirklich zählen,
+            und die Fallen, in die fast alle tappen.
+          </p>
+          <div class="course__foot">
+            <span class="course__price">30&nbsp;€</span>
+            <a class="link-arrow" href="#warteliste">Benachrichtigen</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course reveal" data-reveal-delay="90">
+        <div class="course__thumb" aria-hidden="true">
+          <svg viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M112 118a26 26 0 0 1 5-51 36 36 0 0 1 68 8 24 24 0 0 1-5 47z"
+                  fill="var(--c-accent)" opacity="0.12" stroke="var(--c-accent)" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M148 96v40M148 136l-11-11M148 136l11-11" stroke="var(--c-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="196" y="112" width="72" height="52" rx="8" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+            <rect x="206" y="124" width="52" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.3"/>
+            <rect x="206" y="136" width="40" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.2"/>
+            <rect x="206" y="148" width="46" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.2"/>
+            <rect x="52" y="112" width="72" height="52" rx="8" fill="var(--c-surface)" stroke="var(--c-border)" stroke-width="1.5"/>
+            <rect x="62" y="124" width="52" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.3"/>
+            <rect x="62" y="136" width="40" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.2"/>
+            <rect x="62" y="148" width="46" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.2"/>
+          </svg>
+        </div>
+        <div class="course__body">
+          <div class="course__meta">
+            <span class="tag tag--soon">In Arbeit</span>
+            <span>Für alle</span>
+          </div>
+          <h3>iCloud &amp; Backup endlich verstehen</h3>
+          <p class="body-sm">
+            Was liegt eigentlich wo? Der Kurs räumt mit den größten Missverständnissen
+            auf und zeigt dir eine Backup-Strategie, die auch dann funktioniert,
+            wenn wirklich mal etwas schiefgeht.
+          </p>
+          <div class="course__foot">
+            <span class="course__price">30&nbsp;€</span>
+            <a class="link-arrow" href="#warteliste">Benachrichtigen</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course reveal">
+        <div class="course__thumb" aria-hidden="true">
+          <svg viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="70" y="42" width="180" height="112" rx="10" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+            <rect x="70" y="42" width="180" height="22" rx="10" fill="var(--c-bg-elev)"/>
+            <rect x="70" y="56" width="180" height="8" fill="var(--c-bg-elev)"/>
+            <circle cx="85" cy="53" r="3" fill="var(--c-text-muted)" opacity="0.4"/>
+            <circle cx="96" cy="53" r="3" fill="var(--c-text-muted)" opacity="0.28"/>
+            <circle cx="107" cy="53" r="3" fill="var(--c-text-muted)" opacity="0.28"/>
+            <rect x="84" y="78" width="52" height="60" rx="7" fill="var(--c-accent)" opacity="0.12"/>
+            <rect x="146" y="78" width="90" height="7" rx="3.5" fill="var(--c-accent)" opacity="0.38"/>
+            <rect x="146" y="94" width="70" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.22"/>
+            <rect x="146" y="108" width="84" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.22"/>
+            <rect x="146" y="126" width="46" height="14" rx="7" fill="var(--c-accent)" opacity="0.28"/>
+            <path d="M62 164h196" stroke="var(--c-border-strong)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="course__body">
+          <div class="course__meta">
+            <span class="tag tag--soon">In Arbeit</span>
+            <span>Umsteiger:innen</span>
+          </div>
+          <h3>Vom Windows-PC auf den Mac</h3>
+          <p class="body-sm">
+            Der Kurs für alle, die den Umstieg wagen: Finder statt Explorer,
+            Tastenkürzel, die dir das Leben leichter machen, Programme finden,
+            Daten übernehmen — und die Gewohnheiten umlernen.
+          </p>
+          <div class="course__foot">
+            <span class="course__price">30&nbsp;€</span>
+            <a class="link-arrow" href="#warteliste">Benachrichtigen</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="course reveal" data-reveal-delay="90">
+        <div class="course__thumb" aria-hidden="true">
+          <svg viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="160" cy="100" r="54" stroke="var(--c-border-strong)" stroke-width="1.5" fill="none"/>
+            <circle cx="160" cy="100" r="54" stroke="var(--c-accent)" stroke-width="4" fill="none"
+                    stroke-dasharray="255" stroke-dashoffset="80" stroke-linecap="round"
+                    transform="rotate(-90 160 100)" opacity="0.75"/>
+            <path d="M146 100l10 10 20-22" stroke="var(--c-accent)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="40" y="60" width="52" height="10" rx="5" fill="var(--c-text-muted)" opacity="0.16"/>
+            <rect x="40" y="84" width="40" height="10" rx="5" fill="var(--c-accent)" opacity="0.26"/>
+            <rect x="40" y="108" width="48" height="10" rx="5" fill="var(--c-text-muted)" opacity="0.16"/>
+            <rect x="40" y="132" width="34" height="10" rx="5" fill="var(--c-text-muted)" opacity="0.10"/>
+            <rect x="228" y="60" width="52" height="10" rx="5" fill="var(--c-text-muted)" opacity="0.10"/>
+            <rect x="228" y="84" width="44" height="10" rx="5" fill="var(--c-text-muted)" opacity="0.16"/>
+            <rect x="228" y="108" width="52" height="10" rx="5" fill="var(--c-accent)" opacity="0.20"/>
+            <rect x="228" y="132" width="38" height="10" rx="5" fill="var(--c-text-muted)" opacity="0.10"/>
+          </svg>
+        </div>
+        <div class="course__body">
+          <div class="course__meta">
+            <span class="tag tag--soon">In Arbeit</span>
+            <span>Fortgeschritten</span>
+          </div>
+          <h3>Produktiver mit Kurzbefehlen &amp; Automatisierung</h3>
+          <p class="body-sm">
+            Wiederkehrende Handgriffe automatisieren: Kurzbefehle, Fokus-Modi,
+            sinnvolle Verknüpfungen zwischen Mac, iPhone und iPad. Der Kurs,
+            nach dem dein Gerät für dich arbeitet statt umgekehrt.
+          </p>
+          <div class="course__foot">
+            <span class="course__price">30&nbsp;€</span>
+            <a class="link-arrow" href="#warteliste">Benachrichtigen</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Warteliste -->
+<section class="section" id="warteliste">
+  <div class="wrap wrap--narrow">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Warteliste</span>
+      <h2 class="h-1">Erfahre als Erste:r, wenn ein Kurs live geht</h2>
+      <p class="lead">
+        Kein Newsletter-Dauerfeuer — eine kurze Nachricht, wenn tatsächlich
+        etwas fertig ist. Abmelden jederzeit mit einem Klick.
+      </p>
+    </div>
+
+    <form class="form reveal" data-form data-form-subject="Neue Eintragung in die Academy-Warteliste" novalidate>
+      <div class="form__row">
+        <div class="field">
+          <label for="wl-name">Name</label>
+          <input type="text" id="wl-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="wl-mail">E-Mail-Adresse</label>
+          <input type="email" id="wl-mail" name="email" autocomplete="email" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="wl-interest">Welcher Kurs interessiert dich am meisten?</label>
+        <select id="wl-interest" name="interesse">
+          <option value="">Bitte auswählen (optional)</option>
+          <option>iPhone von Anfang an richtig einrichten</option>
+          <option>iCloud &amp; Backup endlich verstehen</option>
+          <option>Vom Windows-PC auf den Mac</option>
+          <option>Kurzbefehle &amp; Automatisierung</option>
+          <option>Ein anderes Thema</option>
+        </select>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" name="datenschutz" required>
+        <span>
+          Ich bin einverstanden, dass meine Angaben zur Kontaktaufnahme
+          gespeichert werden. Details in der
+          <a href="datenschutz.html">Datenschutzerklärung</a>.
+        </span>
+      </label>
+
+      <!-- Spamschutz: für Menschen unsichtbar, Bots füllen es aus -->
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
+             style="display:none !important" aria-hidden="true">
+      <div class="form__status" aria-live="polite"></div>
+
+      <div>
+        <button class="btn btn--primary btn--lg" type="submit">In die Warteliste eintragen</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band__glow"></div>
+      <h2 class="h-1">Du kannst nicht warten?</h2>
+      <p class="lead">
+        In einer 1:1 Session bekommst du genau die Antworten, die du brauchst —
+        heute schon statt irgendwann.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--on-ink btn--lg" href="kontakt.html">Session anfragen</a>
+        <a class="btn btn--lg" style="color:#fff;border-color:rgba(255,255,255,.25)" href="support.html">Mehr zum Support</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+            <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name"><strong>MacNexus</strong></span>
+        </a>
+        <p class="body-sm">
+          Apple-Software-Support und Online-Kurse für Privat- und Business-Kunden.
+          Sitz im Bezirk Baden, Niederösterreich — online für ganz Österreich.
+        </p>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="support.html">1:1 Support</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="business.html">Für Unternehmen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:office@macnexus.at">office@macnexus.at</a></li>
+          <li><a href="tel:+436642112924">+43 664 2112924</a></li>
+          <li><span style="color:var(--c-text-muted)">Bezirk Baden, NÖ</span></li>
+          <li><span style="color:var(--c-text-muted)">Mo–Fr, 9–18 Uhr</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> MacNexus. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <p class="body-sm" style="margin-top:22px;font-size:12px;line-height:1.5;color:var(--c-text-muted)">
+      MacNexus ist ein unabhängiges Unternehmen und steht in keiner Verbindung zu Apple Inc.
+      Apple, Mac, iPhone, iPad und macOS sind Marken von Apple Inc.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

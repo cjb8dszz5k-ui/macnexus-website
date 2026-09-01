@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+/* Farbschema sofort setzen, damit nichts in der falschen Farbe aufblitzt */
+(function(){try{var v=localStorage.getItem("macnexus-theme");
+document.documentElement.setAttribute("data-theme",
+(v==="light"||v==="dark"||v==="system")?v:"light");}
+catch(e){document.documentElement.setAttribute("data-theme","light");}})();
+</script>
+<title>1:1 Apple Support — MacNexus Baden &amp; Wien</title>
+<meta name="description" content="Persönlicher 1:1 Apple-Support per Bildschirmfreigabe oder vor Ort im Bezirk Baden. 49,99 € pro Session, 30–60 Minuten, verständlich erklärt.">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+        <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__name"><strong>MacNexus</strong></span>
+    </a>
+    <button class="nav__toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-menu"><span></span></button>
+    <div class="nav__menu" id="nav-menu">
+      <nav class="nav__links" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a href="support.html" class="is-active">Support</a>
+        <a href="academy.html">Academy</a>
+        <a href="business.html">Business</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="themeswitch" role="radiogroup" aria-label="Farbschema">
+        <button type="button" class="themeswitch__btn" data-theme-btn="light"
+                role="radio" aria-checked="false" aria-label="Helles Design" title="Hell">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.4M12 19.2v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.4 12h2.4M19.2 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="dark"
+                role="radio" aria-checked="false" aria-label="Dunkles Design" title="Dunkel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.6 8.6 0 019.7 3.5a8.6 8.6 0 1010.8 10.8z"/></svg>
+        </button>
+        <button type="button" class="themeswitch__btn" data-theme-btn="system"
+                role="radio" aria-checked="false" aria-label="Systemeinstellung übernehmen" title="Systemangepasst">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
+        </button>
+      </div>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="page-head__glow"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">1:1 Support</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Persönliche Hilfe,<br>wenn etwas nicht funktioniert.</h1>
+    <p class="lead reveal" data-reveal-delay="120">
+      Du beschreibst dein Problem, ich gehe es mit dir durch — Schritt für Schritt,
+      in verständlicher Sprache. Online per Bildschirmfreigabe oder vor Ort
+      im Bezirk Baden.
+    </p>
+    <div class="btn-row mt-m reveal" data-reveal-delay="180">
+      <a class="btn btn--primary btn--lg" href="buchen.html" data-booking="support" data-booking-label="Session buchen">Session anfragen</a>
+      <a class="link-arrow" href="#ablauf">So läuft eine Session ab</a>
+    </div>
+  </div>
+</section>
+
+<!-- Was drin ist -->
+<section class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <h2 class="h-2">Was in einer Session steckt</h2>
+        <p class="lead mt-s">
+          Eine Session dauert 30 bis 60 Minuten und kostet <strong>49,99 €</strong>.
+          Enthalten ist alles, was du brauchst, um nachher wirklich weiterzukommen.
+        </p>
+        <ul class="ticks mt-m">
+          <li><strong>Kurzes Vorgespräch.</strong> Ich schaue mir dein Anliegen vorab an, damit die Zeit für die Lösung draufgeht und nicht für die Problembeschreibung.</li>
+          <li><strong>Gemeinsames Arbeiten.</strong> Du siehst jeden Schritt live — kein „ich mach das mal schnell im Hintergrund“.</li>
+          <li><strong>Erklärung dazu.</strong> Du erfährst nicht nur was zu tun ist, sondern auch warum.</li>
+          <li><strong>Schriftliche Zusammenfassung.</strong> Die wichtigsten Punkte bekommst du danach per E-Mail — zum Nachlesen.</li>
+          <li><strong>Kurze Rückfragen inklusive.</strong> Wenn danach noch etwas unklar ist, kostet eine kurze Nachfrage nichts extra.</li>
+        </ul>
+      </div>
+
+      <div class="split__visual reveal" data-reveal-delay="120" aria-hidden="true">
+        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Bildschirmfreigabe abstrakt: zwei Fenster verbunden -->
+          <rect x="24" y="70" width="180" height="128" rx="11" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
+          <rect x="24" y="70" width="180" height="24" rx="11" fill="var(--c-bg-elev)"/>
+          <rect x="24" y="86" width="180" height="8" fill="var(--c-bg-elev)"/>
+          <circle cx="40" cy="82" r="3" fill="var(--c-text-muted)" opacity="0.45"/>
+          <circle cx="51" cy="82" r="3" fill="var(--c-text-muted)" opacity="0.3"/>
+          <circle cx="62" cy="82" r="3" fill="var(--c-text-muted)" opacity="0.3"/>
+          <rect x="40" y="110" width="100" height="7" rx="3.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="40" y="128" width="148" height="6" rx="3" fill="var(--c-text-muted)" opacity="0.2"/>
+          <rect x="40" y="144" width="126" height="6" rx="3" fill="var(--c-text-muted)" opacity="0.2"/>
+          <rect x="40" y="168" width="66" height="18" rx="9" fill="var(--c-accent)" opacity="0.3"/>
+
+          <rect x="196" y="102" width="180" height="128" rx="11" fill="var(--c-surface)" stroke="var(--c-accent)" stroke-width="1.5" opacity="0.95"/>
+          <rect x="196" y="102" width="180" height="24" rx="11" fill="var(--c-accent)" opacity="0.10"/>
+          <rect x="196" y="118" width="180" height="8" fill="var(--c-accent)" opacity="0.10"/>
+          <rect x="212" y="142" width="100" height="7" rx="3.5" fill="var(--c-accent)" opacity="0.4"/>
+          <rect x="212" y="160" width="148" height="6" rx="3" fill="var(--c-text-muted)" opacity="0.2"/>
+          <rect x="212" y="176" width="126" height="6" rx="3" fill="var(--c-text-muted)" opacity="0.2"/>
+          <rect x="212" y="200" width="66" height="18" rx="9" fill="var(--c-accent)" opacity="0.3"/>
+
+          <!-- Cursor -->
+          <path d="M262 176l0 22 5-6 4 8 4-2-4-8h7z" fill="var(--c-accent)"/>
+
+          <!-- Verbindung -->
+          <path d="M204 134 C 230 134, 176 168, 200 168" stroke="var(--c-accent)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Themen -->
+<section class="section section--elev">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Typische Anliegen</span>
+      <h2 class="h-1">Womit Kundinnen und Kunden zu mir kommen</h2>
+      <p class="lead">
+        Wenn du dich in einem der Punkte wiederfindest, bist du richtig.
+        Und wenn dein Thema nicht dabei ist: frag trotzdem.
+      </p>
+    </div>
+
+    <div class="chips reveal">
+      <span class="chip">Neues iPhone einrichten</span>
+      <span class="chip">Von Android auf iPhone umsteigen</span>
+      <span class="chip">Von Windows auf Mac wechseln</span>
+      <span class="chip">iCloud ist voll</span>
+      <span class="chip">Fotos richtig sichern</span>
+      <span class="chip">Backup einrichten</span>
+      <span class="chip">Apple-ID Probleme</span>
+      <span class="chip">Passwörter &amp; Zwei-Faktor</span>
+      <span class="chip">Mac ist langsam geworden</span>
+      <span class="chip">Speicher voll</span>
+      <span class="chip">Mail funktioniert nicht</span>
+      <span class="chip">Kalender synchronisiert nicht</span>
+      <span class="chip">Familienfreigabe einrichten</span>
+      <span class="chip">Kindersicherung</span>
+      <span class="chip">Kurzbefehle &amp; Automatisierung</span>
+      <span class="chip">Datenschutz-Einstellungen</span>
+      <span class="chip">Update-Probleme</span>
+      <span class="chip">Daten vom alten Gerät retten</span>
+      <span class="chip">Kaufberatung vor der Anschaffung</span>
+      <span class="chip">Apple Watch einrichten</span>
+    </div>
+  </div>
+</section>
+
+<!-- Ablauf -->
+<section class="section" id="ablauf">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Ablauf</span>
+      <h2 class="h-1">So läuft eine Session ab</h2>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__num">1</div>
+        <h3>Anfrage</h3>
+        <p class="body">
+          Du schickst mir über das Formular eine kurze Beschreibung deines
+          Anliegens und wann es dir zeitlich passt. Innerhalb eines Werktags
+          kommt meine Antwort mit konkreten Terminvorschlägen und einer
+          Einschätzung, ob eine Session reicht.
+        </p>
+      </div>
+      <div class="step reveal" data-reveal-delay="100">
+        <div class="step__num">2</div>
+        <h3>Session</h3>
+        <p class="body">
+          Zum vereinbarten Termin bekommst du einen Link zur
+          Bildschirmfreigabe — oder wir treffen uns vor Ort. Du musst
+          vorher nichts installieren und nichts vorbereiten.
+          Ich arbeite dein Thema mit dir ab.
+        </p>
+      </div>
+      <div class="step reveal" data-reveal-delay="200">
+        <div class="step__num">3</div>
+        <h3>Nachbereitung</h3>
+        <p class="body">
+          Du bekommst die Zusammenfassung per E-Mail und die Rechnung
+          zur Überweisung. Falls beim Nachmachen noch eine Frage auftaucht,
+          melde dich einfach — kurze Rückfragen sind inklusive.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Preis -->
+<section class="section section--elev">
+  <div class="wrap wrap--narrow">
+    <div class="price-card price-card--featured reveal" style="max-width:520px;margin-inline:auto">
+      <span class="price-card__tag">Alles inklusive</span>
+      <div>
+        <h2 class="h-3">1:1 Support-Session</h2>
+        <p class="body-sm mt-s">Ein Thema, eine Session, ein Preis.</p>
+      </div>
+      <div class="price-card__amount">
+        <b>49,99&nbsp;€</b>
+        <span>30–60 Minuten</span>
+      </div>
+      <ul class="ticks">
+        <li>Online per Bildschirmfreigabe — österreichweit</li>
+        <li>Oder vor Ort im Bezirk Baden und Umgebung</li>
+        <li>Schriftliche Zusammenfassung danach</li>
+        <li>Kurze Rückfragen im Anschluss inklusive</li>
+        <li>Rechnung per E-Mail, Zahlung auf Überweisung</li>
+      </ul>
+      <a class="btn btn--primary btn--block btn--lg" href="buchen.html" data-booking="support" data-booking-label="Jetzt Session buchen">Jetzt Session anfragen</a>
+      <p class="booking-alt center" data-booking-alt hidden>Unsicher, ob das dein Thema abdeckt? <a href="kontakt.html">Frag vorher kurz nach</a></p>
+      <p class="body-sm center">Unverbindlich — du zahlst erst nach der Session.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="wrap wrap--narrow">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Fragen zum Support</span>
+      <h2 class="h-1">Bevor du buchst</h2>
+    </div>
+
+    <div class="faq reveal">
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Was brauche ich technisch für eine Online-Session?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Ein funktionierendes Gerät und eine Internetverbindung — mehr nicht.
+            Den Link zur Bildschirmfreigabe bekommst du vorab per E-Mail; du klickst
+            ihn zum Termin einfach an. Ich führe dich durch alles Weitere.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Siehst du dabei meine privaten Daten?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Du gibst deinen Bildschirm frei und entscheidest jederzeit selbst,
+            was du zeigst — die Freigabe kannst du mit einem Klick beenden.
+            Passwörter tippst du immer selbst ein, ich sehe sie nicht und
+            frage auch nie danach.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Kann ich einen Termin verschieben oder absagen?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Selbstverständlich. Sag einfach bis spätestens 24 Stunden vorher
+            Bescheid — dann fallen keine Kosten an, und wir finden einen
+            neuen Termin.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Und wenn wir mein Problem nicht lösen können?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Das sage ich dir ehrlich — am liebsten schon vor dem Termin, wenn ich
+            aus deiner Beschreibung erkenne, dass es etwa ein Hardware-Defekt ist.
+            Stellt sich erst in der Session heraus, dass es außerhalb meines
+            Bereichs liegt, verrechne ich sie nicht und sage dir, an wen du dich
+            am besten wendest.
+          </p>
+        </div></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" aria-expanded="false">Bietest du auch Termine am Abend oder am Wochenende an?</button>
+        <div class="faq__a"><div>
+          <p class="body">
+            Reguläre Zeiten sind Montag bis Freitag zwischen 9 und 18 Uhr.
+            Abendtermine sind nach Absprache oft möglich — schreib einfach
+            in die Anfrage, wann es dir passt, dann finden wir etwas.
+          </p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div class="cta-band__glow"></div>
+      <h2 class="h-1">Beschreib mir dein Problem.</h2>
+      <p class="lead">
+        Ein bis zwei Sätze reichen. Du bekommst innerhalb eines Werktags
+        eine Antwort mit Terminvorschlägen.
+      </p>
+      <div class="btn-row">
+        <a class="btn btn--on-ink btn--lg" href="buchen.html" data-booking="support" data-booking-label="Session buchen">Session anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="var(--c-accent)"/>
+            <path d="M9 22V10l7 8 7-8v12" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__name"><strong>MacNexus</strong></span>
+        </a>
+        <p class="body-sm">
+          Apple-Software-Support und Online-Kurse für Privat- und Business-Kunden.
+          Sitz im Bezirk Baden, Niederösterreich — online für ganz Österreich.
+        </p>
+      </div>
+      <div>
+        <h4>Angebot</h4>
+        <ul>
+          <li><a href="support.html">1:1 Support</a></li>
+          <li><a href="academy.html">Academy</a></li>
+          <li><a href="business.html">Für Unternehmen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="ueber-mich.html">Über mich</a></li>
+          <li><a href="buchen.html">Buchen</a>
+        <a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="mailto:office@macnexus.at">office@macnexus.at</a></li>
+          <li><a href="tel:+436642112924">+43 664 2112924</a></li>
+          <li><span style="color:var(--c-text-muted)">Bezirk Baden, NÖ</span></li>
+          <li><span style="color:var(--c-text-muted)">Mo–Fr, 9–18 Uhr</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> MacNexus. Alle Rechte vorbehalten.</span>
+      <div class="footer__legal">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+      </div>
+    </div>
+    <p class="body-sm" style="margin-top:22px;font-size:12px;line-height:1.5;color:var(--c-text-muted)">
+      MacNexus ist ein unabhängiges Unternehmen und steht in keiner Verbindung zu Apple Inc.
+      Apple, Mac, iPhone, iPad und macOS sind Marken von Apple Inc.
+    </p>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
