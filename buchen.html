@@ -76,216 +76,39 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 
 <section class="section section--top-tight">
   <div class="wrap">
-    <div class="planer" data-planer>
+    <div class="planer">
 
-      <!-- Fortschritt -->
-      <ol class="stufen" aria-label="Fortschritt">
-        <li class="stufen__item is-active" data-stufe="1"><span>1</span> Termin-Art</li>
-        <li class="stufen__item" data-stufe="2"><span>2</span> Tag &amp; Uhrzeit</li>
-        <li class="stufen__item" data-stufe="3"><span>3</span> Deine Daten</li>
-      </ol>
+      <h2 class="h-3 center" style="margin-bottom:28px">Wähl deine gewünschte Option:</h2>
+      <div class="artwahl">
 
-      <!-- ---------- Schritt 1 ---------- -->
-      <div data-schritt="1">
-        <h2 class="h-3 center">Worum geht es?</h2>
-        <div class="artwahl">
-
-          <button type="button" class="artcard" data-art="support">
-            <span class="artcard__preis">49,99 €</span>
-            <h3>1:1 Support-Session</h3>
-            <p class="artcard__meta">60 Minuten · online oder vor Ort</p>
-            <p class="body-sm">
-              Ein konkretes Thema, sauber gelöst und so erklärt, dass du es
-              beim nächsten Mal selbst kannst.
-            </p>
-            <span class="artcard__cta">Auswählen ›</span>
-          </button>
-
-          <button type="button" class="artcard" data-art="business">
-            <span class="artcard__preis artcard__preis--frei">kostenlos</span>
-            <h3>Business-Erstgespräch</h3>
-            <p class="artcard__meta">30 Minuten · online</p>
-            <p class="body-sm">
-              Für Unternehmen: unverbindlich klären, wo es hakt und was
-              sinnvoll wäre. Ohne Verkaufsdruck.
-            </p>
-            <span class="artcard__cta">Auswählen ›</span>
-          </button>
-
-        </div>
-
-        <p class="planer__hinweis center">
-          Nicht sicher, was passt? <a href="kontakt.html">Schreib mir kurz</a> —
-          ich sag dir ehrlich, ob und wie ich helfen kann.
-        </p>
-      </div>
-
-      <!-- ---------- Schritt 2 ---------- -->
-      <div data-schritt="2" hidden>
-        <div class="planer__kopf">
-          <button type="button" class="linkback" data-zurueck="1">‹ Zurück</button>
-          <div class="planer__gewaehlt">
-            <strong data-zf-art>—</strong>
-            <span data-zf-dauer>—</span>
-          </div>
-        </div>
-
-        <div class="planer__split">
-          <div class="kal">
-            <div class="kal__kopf">
-              <button type="button" class="kal__nav" data-kalender-prev aria-label="Vorheriger Monat">‹</button>
-              <strong data-kalender-label>—</strong>
-              <button type="button" class="kal__nav" data-kalender-next aria-label="Nächster Monat">›</button>
-            </div>
-            <div class="kal__grid" data-kalender-grid role="grid"></div>
-            <p class="kal__legende">
-              <span class="kal__punkt"></span> verfügbare Tage
-            </p>
-          </div>
-
-          <div class="slotbox">
-            <p class="slotbox__kopf" data-slots-kopf>Wähl zuerst einen Tag aus.</p>
-            <div class="slotbox__liste" data-slots></div>
-          </div>
-        </div>
-
-        <div class="planer__fuss">
-          <p class="planer__zf">Gewählt: <strong data-zf-termin>noch nicht gewählt</strong></p>
-          <button type="button" class="btn btn--primary btn--lg" data-weiter disabled>Weiter</button>
-        </div>
-      </div>
-
-      <!-- ---------- Schritt 3 ---------- -->
-      <div data-schritt="3" hidden>
-        <div class="planer__kopf">
-          <button type="button" class="linkback" data-zurueck="2">‹ Anderen Termin wählen</button>
-        </div>
-
-        <div class="planer__split planer__split--form">
-          <form class="form" data-form novalidate>
-            <h2 class="h-3">Fast geschafft</h2>
-            <p class="body mt-s" style="margin-bottom:26px">
-              Damit ich die Session vorbereiten kann, brauche ich nur noch
-              ein paar Angaben.
-            </p>
-
-            <input type="hidden" name="termin_art" value="">
-            <input type="hidden" name="termin_datum" value="">
-            <input type="hidden" name="termin_zeit" value="">
-            <input type="hidden" name="termin_kurz" value="">
-
-            <div class="form__row">
-              <div class="field">
-                <label for="b-name">Name *</label>
-                <input type="text" id="b-name" name="name" autocomplete="name" required>
-              </div>
-              <div class="field">
-                <label for="b-mail">E-Mail *</label>
-                <input type="email" id="b-mail" name="email" autocomplete="email" required>
-              </div>
-            </div>
-
-            <div class="form__row">
-              <div class="field">
-                <label for="b-tel">Telefon (optional)</label>
-                <input type="tel" id="b-tel" name="telefon" autocomplete="tel">
-              </div>
-              <div class="field">
-                <label for="b-ort">Wie möchtest du das machen? *</label>
-                <select id="b-ort" name="ort" required>
-                  <option value="">Bitte auswählen</option>
-                  <option>Online per Bildschirmfreigabe</option>
-                  <option>Vor Ort im Bezirk Baden</option>
-                  <option>Vor Ort in Wien</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="b-geraet">Um welches Gerät geht es? (optional)</label>
-              <input type="text" id="b-geraet" name="geraet" placeholder="z. B. iPhone 15, MacBook Air M2">
-            </div>
-
-            <div class="field">
-              <label for="b-anliegen">Dein Anliegen *</label>
-              <textarea id="b-anliegen" name="nachricht" required
-                placeholder="Beschreib kurz, was nicht funktioniert oder was du erreichen möchtest."></textarea>
-              <span class="field__hint">Je konkreter, desto besser kann ich mich vorbereiten.</span>
-            </div>
-
-            <label class="check">
-              <input type="checkbox" name="datenschutz" required>
-              <span>
-                Ich stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage
-                gespeichert und verarbeitet werden. Weitere Informationen in der
-                <a href="datenschutz.html">Datenschutzerklärung</a>. *
-              </span>
-            </label>
-
-            <!-- Spamschutz: für Menschen unsichtbar, Bots füllen es aus -->
-            <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"
-                   style="display:none !important" aria-hidden="true">
-
-            <div class="form__status" aria-live="polite"></div>
-
-            <div>
-              <button class="btn btn--primary btn--lg" type="submit">Termin anfragen</button>
-            </div>
-          </form>
-
-          <aside class="buchbox">
-            <h3 class="buchbox__titel">Deine Auswahl</h3>
-            <dl class="buchbox__liste">
-              <dt>Termin-Art</dt>
-              <dd data-zf-art>—</dd>
-              <dt>Umfang</dt>
-              <dd data-zf-dauer>—</dd>
-              <dt>Wann</dt>
-              <dd data-zf-termin>noch nicht gewählt</dd>
-            </dl>
-            <p class="buchbox__note">
-              Du bekommst zuerst eine Bestätigung von mir — erst dann ist der
-              Termin fix. Kostenlos verschieben oder absagen kannst du bis
-              24 Stunden vorher.
-            </p>
-          </aside>
-        </div>
-      </div>
-
-      <!-- ---------- Schritt 4: Erfolg ---------- -->
-      <div data-schritt="4" hidden>
-        <div class="erfolg">
-          <div class="erfolg__icon" aria-hidden="true">
-            <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="26" cy="26" r="25" stroke="var(--c-accent)" stroke-width="2" opacity="0.3"/>
-              <path d="M16 27l7 7 14-15" stroke="var(--c-accent)" stroke-width="3"
-                    fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h2 class="h-2">Anfrage ist angekommen</h2>
-          <p class="lead mt-m">
-            <strong data-erfolg-art>Termin</strong> am
-            <strong data-erfolg-termin>—</strong>
+        <a class="artcard" href="https://cal.com/macnexus/support" target="_blank" rel="noopener">
+          <span class="artcard__preis">49,99 €</span>
+          <h3>1:1 Support-Session</h3>
+          <p class="artcard__meta">60 Minuten · online oder vor Ort</p>
+          <p class="body-sm">
+            Ein konkretes Thema, sauber gelöst und so erklärt, dass du es
+            beim nächsten Mal selbst kannst.
           </p>
-          <p class="body-lg mt-m">
-            Ich schaue mir deine Anfrage an und bestätige den Termin per E-Mail —
-            in der Regel noch am selben Tag, spätestens am nächsten Werktag.
-            Sollte der Slot inzwischen vergeben sein, schlage ich dir sofort
-            eine Alternative vor.
-          </p>
-          <div class="erfolg__kal">
-            <p>Trag dir den Termin gleich ein, damit du ihn nicht vergisst:</p>
-            <button type="button" class="btn btn--ghost" data-ics>
-              Zum Kalender hinzufügen
-            </button>
-          </div>
+          <span class="artcard__cta">Termin online buchen ›</span>
+        </a>
 
-          <div class="btn-row center mt-l">
-            <a class="btn btn--primary" href="index.html">Zur Startseite</a>
-            <a class="btn btn--ghost" href="academy.html">Academy ansehen</a>
-          </div>
-        </div>
+        <a class="artcard" href="https://cal.com/macnexus/business" target="_blank" rel="noopener">
+          <span class="artcard__preis artcard__preis--frei">kostenlos</span>
+          <h3>Business-Erstgespräch</h3>
+          <p class="artcard__meta">30 Minuten · online</p>
+          <p class="body-sm">
+            Für Unternehmen &amp; Teams: unverbindlich klären, wo es hakt und was
+            sinnvoll wäre. Ohne Verkaufsdruck.
+          </p>
+          <span class="artcard__cta">Termin online buchen ›</span>
+        </a>
+
       </div>
+
+      <p class="planer__hinweis center" style="margin-top:40px">
+        Lieber erst unverbindlich schreiben? <a href="kontakt.html">Schreib mir kurz</a> —
+        ich antworte verlässlich innerhalb eines Werktags.
+      </p>
 
     </div>
   </div>
@@ -378,9 +201,8 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
   </div>
 </footer>
 
-<script src="assets/js/theme.js"></script>
-<script src="assets/js/config.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/booking.js"></script>
+<script src="assets/js/theme.js?v=2"></script>
+<script src="assets/js/config.js?v=2"></script>
+<script src="assets/js/main.js?v=2"></script>
 </body>
 </html>
