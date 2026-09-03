@@ -586,13 +586,197 @@ ul { margin: 0; padding: 0; list-style: none; }
   box-shadow: 0 0 0 3px rgba(52, 199, 89, 0.18);
 }
 
-/* Abstraktes Device-Visual im Hero */
-.hero__visual {
+/* ============================================================
+   7b. Realistisches Apple Hero Showcase (macOS + iOS UI)
+   ============================================================ */
+.hero__stage {
   position: relative;
-  margin: clamp(48px, 7vw, 78px) auto 0;
-  max-width: 820px;
+  margin: clamp(48px, 6.5vw, 76px) auto 0;
+  max-width: 960px;
 }
-.hero__visual svg { width: 100%; height: auto; }
+
+.mac-mockup {
+  position: relative;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border-strong);
+  border-radius: 20px;
+  box-shadow: 0 25px 70px -15px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  text-align: left;
+}
+:root[data-theme="dark"] .mac-mockup {
+  box-shadow: 0 30px 90px -15px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.mac-mockup__titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: var(--c-bg-elev);
+  border-bottom: 1px solid var(--c-border);
+}
+.mac-traffic-lights {
+  display: flex;
+  gap: 8px;
+}
+.mac-traffic-lights span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.mac-dot--red { background: #ff5f57; border: 1px solid #e0443e; }
+.mac-dot--yellow { background: #febc2e; border: 1px solid #d89e24; }
+.mac-dot--green { background: #28c840; border: 1px solid #1aab29; }
+
+.mac-mockup__title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.mac-mockup__status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(52, 199, 89, 0.12);
+  color: #34c759;
+  border: 1px solid rgba(52, 199, 89, 0.25);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--r-pill);
+}
+.mac-mockup__status-badge::before {
+  content: "";
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #34c759;
+  box-shadow: 0 0 6px #34c759;
+}
+
+.mac-mockup__body {
+  padding: 24px;
+  display: grid;
+  gap: 20px;
+  background: var(--c-bg-sunken);
+}
+
+.mac-dashboard {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 720px) {
+  .mac-dashboard { grid-template-columns: 1fr; }
+}
+
+.mac-panel {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.mac-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.mac-panel__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c-text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mac-checklist {
+  display: grid;
+  gap: 12px;
+}
+.mac-checklist__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: var(--c-text-soft);
+  padding: 9px 12px;
+  background: var(--c-bg-elev);
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+}
+.mac-checklist__status {
+  font-weight: 600;
+  font-size: 12px;
+  color: #34c759;
+}
+
+.mac-device-pill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--c-bg-elev);
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+.mac-device-pill:last-child { margin-bottom: 0; }
+.mac-device-pill__icon {
+  width: 32px; height: 32px;
+  border-radius: 8px;
+  background: var(--c-accent-soft);
+  color: var(--c-accent-text);
+  display: grid;
+  place-items: center;
+  flex: none;
+}
+.mac-device-pill__info { flex: 1; }
+.mac-device-pill__name { font-size: 13.5px; font-weight: 600; color: var(--c-text); }
+.mac-device-pill__sub { font-size: 12px; color: var(--c-text-muted); }
+
+/* Floating Glass Badges */
+.hero-floating-badge {
+  position: absolute;
+  z-index: 10;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border-strong);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 10px 18px;
+  border-radius: var(--r-pill);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--c-text);
+  animation: floatSlow 4s ease-in-out infinite alternate;
+}
+.hero-floating-badge--left {
+  top: -18px;
+  left: -15px;
+}
+.hero-floating-badge--right {
+  bottom: -15px;
+  right: -15px;
+  animation-delay: 2s;
+}
+@media (max-width: 860px) {
+  .hero-floating-badge { display: none; }
+}
+
+@keyframes floatSlow {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-8px); }
+}
 
 /* ---------- 8. Karten ---------- */
 .grid {
