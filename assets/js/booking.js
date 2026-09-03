@@ -215,7 +215,13 @@
   /* ---------- Schritt 1: Art wählen ---------- */
   root.querySelectorAll("[data-art]").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      state.art = btn.dataset.art;
+      var art = btn.dataset.art;
+      var extUrl = art === "business" ? cfg.bookingBusiness : cfg.bookingSupport;
+      if (extUrl) {
+        window.open(extUrl, "_blank", "noopener");
+        return;
+      }
+      state.art = art;
       state.datum = null;
       state.zeit = null;
       state.monat = ersterFreierMonat();
