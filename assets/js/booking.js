@@ -73,6 +73,9 @@
   function zeitenFuer(d) {
     var wt = d.getDay() === 0 ? 7 : d.getDay();
     if (wt === 6) return P.zeitenSamstag || [];
+    if (wt === 5 && P.zeitenFreitag && P.zeitenFreitag[state.art]) {
+      return P.zeitenFreitag[state.art].slice();
+    }
     var z = (P.zeiten || {})[state.art];
     return z ? z.slice() : [];
   }

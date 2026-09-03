@@ -61,12 +61,16 @@ window.MACNEXUS_CONFIG = {
     // Arbeitstage: 1 = Montag … 7 = Sonntag
     tage: [1, 2, 3, 4, 5],
 
-    // Uhrzeiten je Termin-Art. Format "HH:MM", lokale Zeit.
-    // Passe das an deinen Feierabend an — du arbeitest nebenberuflich,
-    // deshalb sind abends mehr Slots hinterlegt als tagsüber.
+    // Uhrzeiten Montag bis Donnerstag (09:00 – 18:00 Uhr)
     zeiten: {
-      support:  ["17:00", "18:00", "19:00", "20:00"],
-      business: ["09:00", "12:00", "17:00", "18:00"]
+      support:  ["09:00", "10:30", "13:00", "14:30", "16:00", "17:00"],
+      business: ["09:00", "10:00", "11:30", "14:00", "15:30", "17:00"]
+    },
+
+    // Uhrzeiten am Freitag (09:00 – 14:00 Uhr)
+    zeitenFreitag: {
+      support:  ["09:00", "10:30", "12:00", "13:00"],
+      business: ["09:00", "10:00", "11:30", "13:00"]
     },
 
     // Zusätzliche Zeiten am Samstag (leer lassen = keine)
