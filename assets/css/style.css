@@ -778,6 +778,213 @@ ul { margin: 0; padding: 0; list-style: none; }
   to { transform: translateY(-8px); }
 }
 
+/* ============================================================
+   7c. Profilkarte (Über mich)
+   ============================================================ */
+.profile-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border-strong);
+  border-radius: var(--r-xl);
+  padding: 36px 30px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.profile-card__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--c-accent), #5856d6);
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 24px rgba(0, 113, 227, 0.3);
+  border: 3px solid var(--c-surface);
+}
+.profile-card__name {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--c-text);
+}
+.profile-card__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--c-accent);
+  background: var(--c-accent-soft);
+  padding: 4px 14px;
+  border-radius: var(--r-pill);
+  border: 1px solid rgba(0, 113, 227, 0.15);
+}
+.profile-card__list {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  text-align: left;
+  margin-top: 8px;
+}
+.profile-card__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--c-text-soft);
+  padding: 8px 12px;
+  background: var(--c-bg-elev);
+  border-radius: 10px;
+  border: 1px solid var(--c-border);
+}
+.profile-card__item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--c-accent);
+  flex: none;
+}
+
+/* ============================================================
+   8b. Praxis-Fallbeispiele (Vorher / Nachher)
+   ============================================================ */
+.case-card {
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: var(--r-xl);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.28s var(--ease-out), box-shadow 0.28s var(--ease-out);
+}
+.case-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.case-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.case-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-text);
+  letter-spacing: -0.015em;
+}
+.case-card__duration {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-accent);
+  background: var(--c-accent-soft);
+  padding: 4px 10px;
+  border-radius: var(--r-pill);
+  white-space: nowrap;
+}
+.case-box {
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.case-box--before {
+  background: rgba(255, 59, 48, 0.05);
+  border: 1px solid rgba(255, 59, 48, 0.14);
+  color: var(--c-text-soft);
+}
+.case-box--after {
+  background: rgba(52, 199, 89, 0.08);
+  border: 1px solid rgba(52, 199, 89, 0.2);
+  color: var(--c-text);
+}
+.case-box__icon {
+  font-size: 13px;
+  font-weight: 700;
+  flex: none;
+  margin-top: 1px;
+}
+.case-box--before .case-box__icon { color: #ff3b30; }
+.case-box--after .case-box__icon { color: #34c759; }
+
+/* ============================================================
+   8c. Schnell-Kontakt Leiste (WhatsApp & Telefon)
+   ============================================================ */
+.quick-contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.quick-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px;
+  border-radius: var(--r-pill);
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid var(--c-border);
+  background: var(--c-surface);
+  color: var(--c-text);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  transition: transform 0.2s var(--ease-out), border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+.quick-btn:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  border-color: var(--c-border-strong);
+}
+.quick-btn--whatsapp {
+  color: #128c7e;
+  border-color: rgba(37, 211, 102, 0.25);
+  background: rgba(37, 211, 102, 0.06);
+}
+:root[data-theme="dark"] .quick-btn--whatsapp {
+  color: #25d366;
+}
+.quick-btn--whatsapp:hover {
+  border-color: #25d366;
+  background: rgba(37, 211, 102, 0.12);
+}
+
+/* ============================================================
+   8d. Kurs-Curriculum (Academy)
+   ============================================================ */
+.course__curriculum {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 16px;
+  padding: 12px 14px;
+  background: var(--c-bg-elev);
+  border-radius: 12px;
+  border: 1px solid var(--c-border);
+}
+.course__curriculum-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--c-text-soft);
+}
+.course__curriculum-item svg {
+  width: 14px;
+  height: 14px;
+  color: var(--c-accent);
+  flex: none;
+}
+
 /* ---------- 8. Karten ---------- */
 .grid {
   display: grid;

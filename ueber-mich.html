@@ -15,7 +15,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css?v=3">
+<link rel="stylesheet" href="assets/css/style.css?v=5">
 </head>
 <body>
 
@@ -92,30 +92,33 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
         </p>
       </div>
 
-      <div class="split__visual reveal" data-reveal-delay="120" aria-hidden="true">
-        <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="60" y="52" width="280" height="196" rx="16" fill="var(--c-surface)" stroke="var(--c-border-strong)" stroke-width="1.5"/>
-          <rect x="60" y="52" width="280" height="34" rx="16" fill="var(--c-bg-elev)"/>
-          <rect x="60" y="72" width="280" height="14" fill="var(--c-bg-elev)"/>
-          <circle cx="82" cy="69" r="4" fill="var(--c-text-muted)" opacity="0.4"/>
-          <circle cx="96" cy="69" r="4" fill="var(--c-text-muted)" opacity="0.26"/>
-          <circle cx="110" cy="69" r="4" fill="var(--c-text-muted)" opacity="0.26"/>
+      <div class="reveal" data-reveal-delay="120">
+        <div class="profile-card">
+          <div class="profile-card__avatar">AY</div>
+          <div>
+            <h3 class="profile-card__name">Ali Yuvarlak</h3>
+            <span class="profile-card__tag">Gründer von MacNexus · Apple-Experte</span>
+          </div>
 
-          <!-- Chat: Frage -->
-          <rect x="82" y="104" width="150" height="42" rx="12" fill="var(--c-bg-elev)"/>
-          <rect x="96" y="116" width="106" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.3"/>
-          <rect x="96" y="128" width="78" height="5" rx="2.5" fill="var(--c-text-muted)" opacity="0.22"/>
+          <div class="profile-card__list">
+            <div class="profile-card__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Schönau an der Triesting (Bezirk Baden) &amp; Wien</span>
+            </div>
+            <div class="profile-card__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Termine meist innerhalb von 24–48 Stunden</span>
+            </div>
+            <div class="profile-card__item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>100% Zufriedenheitsgarantie (0 € Risiko)</span>
+            </div>
+          </div>
 
-          <!-- Chat: Antwort -->
-          <rect x="152" y="158" width="166" height="56" rx="12" fill="var(--c-accent)" opacity="0.14"/>
-          <rect x="168" y="170" width="122" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.55"/>
-          <rect x="168" y="182" width="134" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
-          <rect x="168" y="194" width="96" height="5" rx="2.5" fill="var(--c-accent)" opacity="0.4"/>
-
-          <!-- Häkchen -->
-          <circle cx="104" cy="222" r="14" fill="var(--c-accent)" opacity="0.16"/>
-          <path d="M97 222l5 5 9-10" stroke="var(--c-accent)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+          <div class="mt-s" style="width:100%">
+            <a class="btn btn--primary btn--block" href="https://cal.com/macnexus/support" target="_blank" rel="noopener">Termin mit Ali vereinbaren</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
