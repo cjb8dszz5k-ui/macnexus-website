@@ -6,7 +6,7 @@ Nächstes ansteht — damit nicht jedes Mal neu erklärt werden muss.
 
 ## Was ist macNexus?
 
-Ali Yuvarlak (Teamleiter Vollzeit, macNexus als Nebenerwerb) baut ein
+Ali Yuvarlak (hauptberuflich angestellt, macNexus als Nebenerwerb) baut ein
 Einzelunternehmen für Apple-Software-Support in Österreich auf:
 Ausschließlich macOS/iOS/iCloud/Sicherheit/Migration — **keine Hardware-Reparatur**.
 
