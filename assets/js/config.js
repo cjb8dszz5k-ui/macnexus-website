@@ -27,8 +27,10 @@ window.MACNEXUS_CONFIG = {
 
      Leer lassen = Button führt aufs Kontaktformular.
   */
-  bookingSupport:  "https://cal.com/macnexus/support",
-  bookingBusiness: "https://cal.com/macnexus/business",
+  bookingSupport:    "https://cal.com/macnexus/support",
+  bookingGrosseHilfe: "https://cal.com/macnexus/grosse-hilfe",
+  bookingVorOrt:      "https://cal.com/macnexus/vor-ort",
+  bookingBusiness:    "https://cal.com/macnexus/business",
 
   /* ----------------------------------------------------------
      2. FORMULARVERSAND  (Web3Forms)
