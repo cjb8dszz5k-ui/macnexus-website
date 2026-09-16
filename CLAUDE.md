@@ -6,16 +6,31 @@ Nächstes ansteht — damit nicht jedes Mal neu erklärt werden muss.
 
 ## Was ist macNexus?
 
-Ali Yuvarlak (hauptberuflich angestellt, macNexus als Nebenerwerb) baut ein
-Einzelunternehmen für Apple-Software-Support in Österreich auf:
+Ali Yuvarlak baut ein Einzelunternehmen für Apple-Software-Support in Österreich
+auf; seit 16.09.2026 ist macNexus sein einziges Projekt.
 Ausschließlich macOS/iOS/iCloud/Sicherheit/Migration — **keine Hardware-Reparatur**.
 
-Drei Einnahmesäulen:
-1. **1:1 Support-Session** — 49,99 € Pauschale, bis 60 Min, 100%
-   Zufriedenheitsgarantie (keine Lösung = 0 €).
-2. **macNexus Business** (B2B) — kostenloses 30-Min-Erstgespräch, danach
-   89–120 €/Std. oder Pauschalpakete.
-3. **macNexus Academy** — Video-Onlinekurse, ca. 30 € Einmalkauf.
+**Angebot seit 16.09.2026** (ersetzt die alte 49,99-€-Pauschale):
+
+1. **Hilfe, wenn etwas nicht funktioniert**
+   - Schnelle Hilfe — 30 Min online — **49 €**
+   - Große Hilfe — 60 Min online — **89 €**
+   - Hilfe bei dir zuhause — 60 Min vor Ort inkl. Anfahrt — **129 €**
+     (jede weitere angefangene halbe Stunde 45 €)
+2. **Fix-und-fertig-Pakete** (Festpreis fürs Ergebnis)
+   - Neues Gerät startklar **149 €** · Backup, das wirklich funktioniert **149 €**
+   - Mac-Frühjahrsputz **119 €** · Umstieg Windows → Mac **249 €**
+3. **macNexus Business** (B2B) — kostenloses 30-Min-Erstgespräch, danach
+   **120 €/Std.**, laufende Betreuung **ab 290 €/Monat** (2,5 Std. inkl.,
+   monatlich kündbar).
+4. **macNexus Academy** — Video-Onlinekurse, **39 €** Einmalkauf.
+
+Durchgehend: 100 % Zufriedenheitsgarantie (keine Lösung = keine Rechnung).
+
+**Verbindliche Preisquelle:**
+`~/Documents/macnexus-unterlagen/macNexus_Angebot_und_Preise_2026.md`.
+Preise nie aus dem Gedächtnis ändern — immer aus dieser Datei übernehmen und
+bei Änderungen zuerst dort aktualisieren.
 
 Standort: Kirchengasse 5a/7, 2525 Schönau an der Triesting (Bezirk Baden, NÖ).
 Vor Ort: Baden, Mödling, Wiener Neustadt, Wien. Remote: ganz Österreich + DACH.
@@ -123,7 +138,9 @@ Noch offen laut README/Master-Doku:
 - [ ] Persönliche Über-mich-Geschichte final einsetzen
 - [ ] GISA-Zahl/UID nach Gewerbeanmeldung ins Impressum eintragen
 - [ ] Cookie-Banner vor Start von Google/Meta Ads ergänzen
-- [ ] Rechnungsvorlage für 49,99 € (ohne USt-Ausweis) aufsetzen
+- [ ] Rechnungsvorlage (ohne USt-Ausweis) für die neuen Preise aufsetzen
+- [ ] Cal.com-Terminarten auf Schnelle Hilfe / Große Hilfe / Vor Ort umstellen
+- [ ] Vor der ersten Rechnung: Zuverdienst-Regeln mit dem AMS klären (UGP)
 
 Die Website-technischen Aufgaben sind größtenteils erledigt (Rechtstexte,
 persönliche Story, Cal.com-Anbindung, Hero-Design). Der Fokus laut Roadmap

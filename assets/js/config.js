@@ -17,8 +17,10 @@ window.MACNEXUS_CONFIG = {
      ----------------------------------------------------------
      Lege bei deinem Buchungstool zwei Termin-Arten an:
 
-       • eine für Support-Sessions (60 Min, 49,99 €)
-       • eine für Business-Erstgespräche (30 Min, kostenlos)
+       • Schnelle Hilfe      (30 Min, online,   49 €)
+       • Große Hilfe         (60 Min, online,   89 €)
+       • Hilfe bei dir zuhause (60 Min, vor Ort, 129 € inkl. Anfahrt)
+       • Business-Erstgespräch (30 Min, kostenlos)
 
      Kopiere dann die jeweilige öffentliche Adresse hier herein,
      z. B. "https://cal.com/macnexus/support".

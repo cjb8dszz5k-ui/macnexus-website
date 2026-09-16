@@ -27,11 +27,25 @@
   /* ---------- Termin-Arten ---------- */
   var ARTEN = {
     support: {
-      titel: "1:1 Support-Session",
+      titel: "Schnelle Hilfe",
+      dauer: "30 Minuten",
+      minuten: 30,
+      preis: "49 €",
+      text: "Eine Frage, eine Sache — kurz und bündig online erledigt."
+    },
+    support60: {
+      titel: "Große Hilfe",
       dauer: "60 Minuten",
       minuten: 60,
-      preis: "49,99 €",
-      text: "Ein konkretes Thema, sauber gelöst und verständlich erklärt."
+      preis: "89 €",
+      text: "Mehrere Fragen oder ein größeres Thema, online in einem Rutsch."
+    },
+    vorort: {
+      titel: "Hilfe bei dir zuhause",
+      dauer: "60 Minuten",
+      minuten: 60,
+      preis: "129 €",
+      text: "Vor Ort im Bezirk Baden, Mödling, Wiener Neustadt und Wien — Anfahrt inklusive."
     },
     business: {
       titel: "Business-Erstgespräch",
