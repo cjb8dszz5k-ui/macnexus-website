@@ -191,3 +191,4 @@ automatisch eingetragen **und** bereits belegte Zeiten gar nicht erst als frei
 angeboten. Das löst zugleich das Doppelbuchungs-Problem des eingebauten Planers.
 Wenn du diesen Weg gehst, trag den Link einfach in `config.js` ein — die Seite
 schaltet dann von selbst um.
+
