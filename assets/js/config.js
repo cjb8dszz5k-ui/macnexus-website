@@ -10,6 +10,8 @@
    und das Formular zeigt einen Hinweis mit deiner E-Mail-Adresse.
    ============================================================ */
 
+/* VORBEREITUNGSPHASE (Stand 05.10.2026): Buchungslinks bewusst leer, Buchung gesperrt.
+   Wieder freischalten: Commit "Vorbereitungsphase" rückgängig machen (git revert). */
 window.MACNEXUS_CONFIG = {
 
   /* ----------------------------------------------------------
@@ -27,10 +29,10 @@ window.MACNEXUS_CONFIG = {
 
      Leer lassen = Button führt aufs Kontaktformular.
   */
-  bookingSupport:    "https://cal.com/macnexus/support",
-  bookingGrosseHilfe: "https://cal.com/macnexus/grosse-hilfe",
-  bookingVorOrt:      "https://cal.com/macnexus/vor-ort",
-  bookingBusiness:    "https://cal.com/macnexus/business",
+  bookingSupport:    "",
+  bookingGrosseHilfe: "",
+  bookingVorOrt:      "",
+  bookingBusiness:    "",
 
   /* ----------------------------------------------------------
      2. FORMULARVERSAND  (Web3Forms)

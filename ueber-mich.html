@@ -15,11 +15,18 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css?v=7">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="vorb-banner" role="note">
+  <p><strong>Vorbereitungsphase:</strong> MacNexus befindet sich noch im Aufbau und in der Testphase.
+  Aktuell können <strong>keine Termine gebucht</strong>, keine Aufträge angenommen und keine Leistungen erbracht
+  oder verrechnet werden. Alle Angaben und Preise auf dieser Website sind vorläufig und unverbindlich.</p>
+</div>
+
 
 <header class="nav">
   <div class="nav__inner">
@@ -55,7 +62,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
         </button>
       </div>
-      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support">Noch nicht buchbar</a>
     </div>
   </div>
 </header>
@@ -116,7 +123,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
           </div>
 
           <div class="mt-s" style="width:100%">
-            <a class="btn btn--primary btn--block" href="https://cal.com/macnexus/support" target="_blank" rel="noopener">Termin mit Ali vereinbaren</a>
+            <a class="btn btn--primary btn--block" href="buchen.html">Ab Start buchbar</a>
           </div>
         </div>
       </div>

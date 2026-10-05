@@ -15,11 +15,18 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css?v=7">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="vorb-banner" role="note">
+  <p><strong>Vorbereitungsphase:</strong> MacNexus befindet sich noch im Aufbau und in der Testphase.
+  Aktuell können <strong>keine Termine gebucht</strong>, keine Aufträge angenommen und keine Leistungen erbracht
+  oder verrechnet werden. Alle Angaben und Preise auf dieser Website sind vorläufig und unverbindlich.</p>
+</div>
+
 
 <header class="nav">
   <div class="nav__inner">
@@ -55,7 +62,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
         </button>
       </div>
-      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support" data-booking-label="Termin buchen">Termin buchen</a>
+      <a class="btn btn--primary nav__cta" href="buchen.html" data-booking="support">Noch nicht buchbar</a>
     </div>
   </div>
 </header>
@@ -73,7 +80,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
       ein fester Ansprechpartner statt anonymer Hotline.
     </p>
     <div class="btn-row mt-m reveal" data-reveal-delay="180">
-      <a class="btn btn--primary btn--lg" href="https://cal.com/macnexus/business" target="_blank" rel="noopener">Kostenloses Erstgespräch buchen</a>
+      <a class="btn btn--primary btn--lg" href="buchen.html">Ab Start buchbar</a>
       <a class="link-arrow" href="#leistungen">Leistungen ansehen</a>
     </div>
   </div>
@@ -264,7 +271,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
           <li>Typisch: Neuaufsetzen der Geräte, Umstieg, Backup-Konzept</li>
           <li>Dokumentation des Setups zum Nachschlagen</li>
         </ul>
-        <a class="btn btn--ghost btn--block" href="https://cal.com/macnexus/business" target="_blank" rel="noopener">Projekt im Erstgespräch besprechen</a>
+        <a class="btn btn--ghost btn--block" href="buchen.html">Ab Start buchbar</a>
       </div>
 
       <div class="price-card price-card--featured reveal" data-reveal-delay="100">
@@ -284,7 +291,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
           <li>Beratung vor Neuanschaffungen inklusive</li>
           <li>Keine lange Bindung — monatlich kündbar</li>
         </ul>
-        <a class="btn btn--primary btn--block" href="https://cal.com/macnexus/business" target="_blank" rel="noopener">Erstgespräch buchen</a>
+        <a class="btn btn--primary btn--block" href="buchen.html">Ab Start buchbar</a>
       </div>
     </div>
 
@@ -409,7 +416,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
         wo ihr steht — auch wenn wir am Ende nicht zusammenarbeiten.
       </p>
       <div class="btn-row">
-        <a class="btn btn--on-ink btn--lg" href="buchen.html" data-booking="business" data-booking-label="Erstgespräch buchen">Erstgespräch anfragen</a>
+        <a class="btn btn--on-ink btn--lg" href="buchen.html" data-booking="business">Ab Start buchbar</a>
         <p class="booking-alt" data-booking-alt hidden>Oder <a href="kontakt.html">schreib mir zuerst</a>, wenn du lieber Details vorab klärst.</p>
       </div>
     </div>

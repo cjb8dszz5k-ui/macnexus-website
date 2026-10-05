@@ -1901,3 +1901,22 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Typografische Ruhe und perfekte Abstände */
 .section-head .lead { margin-top: 16px; }
 .page-head { border-bottom-color: var(--c-border); }
+
+
+/* ---------- Vorbereitungsphase: Hinweisband und gesperrte Buchung ---------- */
+.vorb-banner {
+  background: #fff3d1;
+  color: #4d3300;
+  border-bottom: 1px solid #ecd48a;
+  padding: 10px 16px;
+  font-size: .9rem;
+  line-height: 1.45;
+  text-align: center;
+}
+.vorb-banner p { margin: 0 auto; max-width: 980px; }
+[data-theme="dark"] .vorb-banner { background: #3a2e14; color: #f3dfaa; border-bottom-color: #5a4720; }
+@media (prefers-color-scheme: dark) {
+  [data-theme="system"] .vorb-banner { background: #3a2e14; color: #f3dfaa; border-bottom-color: #5a4720; }
+}
+.artcard--aus { cursor: default; opacity: .65; pointer-events: none; }
+.artcard--aus .artcard__cta { color: var(--c-text-muted); }

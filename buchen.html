@@ -10,16 +10,23 @@ document.documentElement.setAttribute("data-theme",
 (v==="light"||v==="dark"||v==="system")?v:"light");}
 catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 </script>
-<title>Termin buchen — MacNexus</title>
-<meta name="description" content="Wähl direkt einen Termin für deine 1:1 Apple-Support-Session oder ein kostenloses Business-Erstgespräch. Bezirk Baden, Wien und online in ganz Österreich.">
+<title>Termine — MacNexus</title>
+<meta name="description" content="MacNexus befindet sich in der Vorbereitungsphase. Termine können aktuell nicht gebucht werden.">
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css?v=7">
+<link rel="stylesheet" href="assets/css/style.css?v=8">
 </head>
 <body>
 
 <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<div class="vorb-banner" role="note">
+  <p><strong>Vorbereitungsphase:</strong> MacNexus befindet sich noch im Aufbau und in der Testphase.
+  Aktuell können <strong>keine Termine gebucht</strong>, keine Aufträge angenommen und keine Leistungen erbracht
+  oder verrechnet werden. Alle Angaben und Preise auf dieser Website sind vorläufig und unverbindlich.</p>
+</div>
+
 
 <header class="nav">
   <div class="nav__inner">
@@ -55,7 +62,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.8" y="4.4" width="18.4" height="12.4" rx="2"/><path d="M8.6 20.4h6.8"/></svg>
         </button>
       </div>
-      <a class="btn btn--primary nav__cta is-active" href="buchen.html">Termin buchen</a>
+      <a class="btn btn--primary nav__cta is-active" href="buchen.html">Noch nicht buchbar</a>
     </div>
   </div>
 </header>
@@ -65,11 +72,10 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 <section class="page-head page-head--tight">
   <div class="page-head__glow"></div>
   <div class="wrap">
-    <span class="eyebrow reveal">Terminplaner</span>
-    <h1 class="h-1 reveal" data-reveal-delay="60">Such dir einen Termin aus.</h1>
+    <span class="eyebrow reveal">Vorbereitungsphase</span>
+    <h1 class="h-1 reveal" data-reveal-delay="60">Termine sind noch nicht buchbar.</h1>
     <p class="lead reveal" data-reveal-delay="120">
-      In drei Schritten erledigt. Du bekommst die Bestätigung per E-Mail —
-      in der Regel noch am selben Tag.
+      MacNexus befindet sich im Aufbau und in der Testphase. Aktuell werden keine Termine vergeben, keine Aufträge angenommen und keine Leistungen erbracht oder verrechnet. Was später möglich sein soll, siehst du unten, alles vorläufig und unverbindlich.
     </p>
   </div>
 </section>
@@ -78,10 +84,10 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
   <div class="wrap">
     <div class="planer">
 
-      <h2 class="h-3 center" style="margin-bottom:28px">Wähl deine gewünschte Option:</h2>
+      <h2 class="h-3 center" style="margin-bottom:28px">Geplantes Angebot (noch nicht buchbar):</h2>
       <div class="artwahl">
 
-        <a class="artcard" href="https://cal.com/macnexus/support" target="_blank" rel="noopener">
+        <div class="artcard artcard--aus" aria-disabled="true">
           <span class="artcard__preis">49 €</span>
           <h3>Schnelle Hilfe</h3>
           <p class="artcard__meta">30 Minuten · online</p>
@@ -89,10 +95,10 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
             Eine Frage, eine Sache — kurz und bündig erledigt, gemeinsam
             auf deinem Bildschirm.
           </p>
-          <span class="artcard__cta">Termin online buchen ›</span>
-        </a>
+          <span class="artcard__cta">Noch nicht buchbar</span>
+        </div>
 
-        <a class="artcard" href="https://cal.com/macnexus/grosse-hilfe" target="_blank" rel="noopener">
+        <div class="artcard artcard--aus" aria-disabled="true">
           <span class="artcard__preis">89 €</span>
           <h3>Große Hilfe</h3>
           <p class="artcard__meta">60 Minuten · online</p>
@@ -100,10 +106,10 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
             Mehrere Fragen oder ein größeres Thema, sauber gelöst und so
             erklärt, dass du es beim nächsten Mal selbst kannst.
           </p>
-          <span class="artcard__cta">Termin online buchen ›</span>
-        </a>
+          <span class="artcard__cta">Noch nicht buchbar</span>
+        </div>
 
-        <a class="artcard" href="https://cal.com/macnexus/vor-ort" target="_blank" rel="noopener">
+        <div class="artcard artcard--aus" aria-disabled="true">
           <span class="artcard__preis">129 €</span>
           <h3>Hilfe bei dir zuhause</h3>
           <p class="artcard__meta">60 Minuten · vor Ort, Anfahrt inklusive</p>
@@ -111,10 +117,10 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
             Ich komme zu dir: Bezirk Baden, Mödling, Wiener Neustadt und Wien.
             Kein Kilometergeld obendrauf.
           </p>
-          <span class="artcard__cta">Termin online buchen ›</span>
-        </a>
+          <span class="artcard__cta">Noch nicht buchbar</span>
+        </div>
 
-        <a class="artcard" href="https://cal.com/macnexus/business" target="_blank" rel="noopener">
+        <div class="artcard artcard--aus" aria-disabled="true">
           <span class="artcard__preis artcard__preis--frei">kostenlos</span>
           <h3>Business-Erstgespräch</h3>
           <p class="artcard__meta">30 Minuten · online</p>
@@ -122,14 +128,13 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
             Für Unternehmen &amp; Teams: unverbindlich klären, wo es hakt und was
             sinnvoll wäre. Ohne Verkaufsdruck.
           </p>
-          <span class="artcard__cta">Termin online buchen ›</span>
-        </a>
+          <span class="artcard__cta">Noch nicht buchbar</span>
+        </div>
 
       </div>
 
       <p class="planer__hinweis center" style="margin-top:40px">
-        Lieber erst unverbindlich schreiben? <a href="kontakt.html">Schreib mir kurz</a> —
-        ich antworte verlässlich innerhalb eines Werktags.
+        Fragen zum Aufbau von MacNexus? Du erreichst mich unter <a href="kontakt.html">Kontakt</a>. Termine vergebe ich noch nicht.
       </p>
 
     </div>
@@ -141,21 +146,21 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
   <div class="wrap">
     <div class="grid grid--3">
       <div class="card card--plain reveal">
-        <h3>Kein Risiko</h3>
+        <h3>Später: kein Risiko</h3>
         <p class="body">
           Stellt sich heraus, dass dein Anliegen nicht in meinen Bereich fällt,
           verrechne ich nichts.
         </p>
       </div>
       <div class="card card--plain reveal" data-reveal-delay="80">
-        <h3>Flexibel</h3>
+        <h3>Später: flexibel</h3>
         <p class="body">
           Bis 24 Stunden vor dem Termin kannst du kostenlos verschieben
           oder absagen.
         </p>
       </div>
       <div class="card card--plain reveal" data-reveal-delay="160">
-        <h3>Klarer Preis</h3>
+        <h3>Später: klarer Preis</h3>
         <p class="body">
           49 € online, 129 € bei dir zuhause — vorher bekannt, keine
           versteckten Zusatzkosten.
@@ -195,7 +200,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
         <h4>Unternehmen</h4>
         <ul>
           <li><a href="ueber-mich.html">Über mich</a></li>
-          <li><a href="buchen.html">Termin buchen</a></li>
+          <li><a href="buchen.html">Termine</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </div>
