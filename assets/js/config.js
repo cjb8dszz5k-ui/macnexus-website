@@ -19,9 +19,9 @@ window.MACNEXUS_CONFIG = {
      ----------------------------------------------------------
      Lege bei deinem Buchungstool zwei Termin-Arten an:
 
-       • Schnelle Hilfe      (30 Min, online,   49 €)
-       • Große Hilfe         (60 Min, online,   89 €)
-       • Hilfe bei dir zuhause (60 Min, vor Ort, 129 € inkl. Anfahrt)
+       • Schnelle Hilfe      (30 Min, online,   59 €)
+       • Große Hilfe         (60 Min, online,   99 €)
+       • Hilfe bei dir zuhause (60 Min, vor Ort, 159/199 € inkl. Anfahrt)
        • Business-Erstgespräch (30 Min, kostenlos)
 
      Kopiere dann die jeweilige öffentliche Adresse hier herein,

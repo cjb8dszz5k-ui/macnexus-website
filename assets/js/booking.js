@@ -30,21 +30,21 @@
       titel: "Schnelle Hilfe",
       dauer: "30 Minuten",
       minuten: 30,
-      preis: "49 €",
+      preis: "59 €",
       text: "Eine Frage, eine Sache — kurz und bündig online erledigt."
     },
     support60: {
       titel: "Große Hilfe",
       dauer: "60 Minuten",
       minuten: 60,
-      preis: "89 €",
+      preis: "99 €",
       text: "Mehrere Fragen oder ein größeres Thema, online in einem Rutsch."
     },
     vorort: {
       titel: "Hilfe bei dir zuhause",
       dauer: "60 Minuten",
       minuten: 60,
-      preis: "129 €",
+      preis: "ab 159 €",
       text: "Vor Ort im Bezirk Baden, Mödling, Wiener Neustadt und Wien — Anfahrt inklusive."
     },
     business: {
