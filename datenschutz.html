@@ -16,7 +16,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230071e3'/%3E%3Cpath d='M9 22V10l7 8 7-8v12' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/css/style.css?v=8">
+<link rel="stylesheet" href="assets/css/style.css?v=9">
 </head>
 <body>
 
@@ -210,12 +210,21 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
         <strong>Hosting-Anbieter:</strong> Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaca, Zypern. Mit dem Anbieter besteht ein Auftragsverarbeitungsvertrag gemäß Art. 28 DSGVO.
       </p>
 
-      <h2>6. Cookies</h2>
+      <h2 id="cookies">6. Cookies und lokale Speicherung</h2>
       <p>
         Diese Website setzt in ihrer aktuellen Fassung keine Tracking- oder
-        Marketing-Cookies. Technisch notwendige Cookies können durch den
-        Hosting-Anbieter gesetzt werden; sie dienen ausschließlich dem sicheren Betrieb
-        der Seite.
+        Marketing-Cookies. Technisch notwendig sind die Speicherung deines
+        gewählten Farbschemas und deiner Cookie-Entscheidung im lokalen Speicher
+        deines Browsers (Rechtsgrundlage: § 165 Abs. 3 TKG 2021, kein Zugriff auf
+        andere Daten). Der Hosting-Anbieter kann technisch notwendige Cookies
+        für den sicheren Betrieb der Seite setzen.
+      </p>
+      <p>
+        Sollten wir künftig Statistik- oder Werbedienste einsetzen, werden diese
+        erst nach deiner ausdrücklichen Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)
+        geladen. Du kannst „Ablehnen“ genauso einfach wählen wie „Akzeptieren“
+        und deine Entscheidung jederzeit über „Cookie-Einstellungen“ im Seitenende
+        ändern oder widerrufen.
       </p>
 
       <h2>7. Weitergabe an Dritte</h2>
@@ -261,6 +270,7 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
         <a href="agb.html">AGB</a>
+        <button type="button" class="link-btn" data-cookie-settings>Cookie-Einstellungen</button>
       </div>
     </div>
   </div>
@@ -269,5 +279,6 @@ catch(e){document.documentElement.setAttribute("data-theme","light");}})();
 <script src="assets/js/theme.js"></script>
 <script src="assets/js/config.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/consent.js"></script>
 </body>
 </html>
