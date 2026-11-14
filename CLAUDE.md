@@ -72,7 +72,7 @@ Ladegeschwindigkeit über die System-Schrift (SF Pro).
 | `academy.html` | 4 Online-Kurse + Warteliste (Web3Forms) |
 | `business.html` | B2B-Angebot |
 | `ueber-mich.html` | Persönliche Profilkarte, Standort, Reaktionszeit |
-| `buchen.html` | Terminplaner (eigenbau) → aktuell umgestellt auf Cal.com |
+| `buchen.html` | Terminplaner (eigenbau); **seit 05.10.2026 gesperrt** (Vorbereitungsphase, Buttons „Noch nicht buchbar“) |
 | `kontakt.html` | Anfrageformular (Web3Forms) + WhatsApp/Anruf-Buttons |
 | `impressum.html`, `datenschutz.html`, `agb.html` | Rechtstexte (AT/DSGVO) |
 
@@ -116,15 +116,15 @@ Ladegeschwindigkeit über die System-Schrift (SF Pro).
 
 ## Aktueller Stand (siehe `git log`)
 
-Working tree ist sauber, `main` ist deckungsgleich mit `origin/main`. Letzte
-Commits (neueste zuerst):
-1. Hero Redesign: Mockups entfernt, purer Minimalismus mit Trust-Pillen
-   *(aktueller Live-Zustand)*
-2. Hero Showcase mit MacBook+iPhone-Mockup *(verworfen, s.o.)*
-3. Ablauf/FAQ zu Google Meet & Bildschirmfreigabe präzisiert
-4. 4 Optimierungen: Über-Mich-Profilkarte, Vorher/Nachher-Fallbeispiele,
-   WhatsApp/Tel-Schnellkontakt, Academy-Curricula
-5. Cal.com Live-Buchungslinks aktiviert
+**Vorbereitungsphase (seit 05.10.2026):** Das Gewerbe ist noch nicht angemeldet.
+Alle Seiten tragen ein Hinweisband, Buchung ist gesperrt, `config.js` hat leere
+Cal.com-Links. Wieder freischalten erst nach Gewerbeanmeldung (Commit f817475
+rückgängig machen). **Vor jeder Änderung die AMS/UGP-Regeln prüfen** (Vault:
+`System/Skills (Arbeitsanweisungen)/ams-ugp-regeln.md`) und nie ohne Alis OK auf
+`main` pushen: Push = live.
+
+Letzte Commits (neueste zuerst): Cookie-Banner (82d6b71), neue Preise 2026-10
+(7eeca56), Vorbereitungsphase (f817475).
 
 Remote-Support-Workflow ist praxisgetestet: Apple-native Bildschirmfreigabe
 als primärer Weg (kostenlos, Ende-zu-Ende von Apple verschlüsselt), Google
@@ -140,7 +140,7 @@ Hostinger korrekt auf `main` zeigt.
 Noch offen laut README/Master-Doku:
 - [ ] Persönliche Über-mich-Geschichte final einsetzen
 - [ ] GISA-Zahl/UID nach Gewerbeanmeldung ins Impressum eintragen
-- [ ] Cookie-Banner vor Start von Google/Meta Ads ergänzen
+- [x] Cookie-Banner (Commit 82d6b71, `assets/js/consent.js`) — erledigt
 - [ ] Rechnungsvorlage (ohne USt-Ausweis) für die neuen Preise aufsetzen
 - [ ] Cal.com-Terminarten auf Schnelle Hilfe / Große Hilfe / Vor Ort umstellen
 - [ ] Vor der ersten Rechnung: Zuverdienst-Regeln mit dem AMS klären (UGP)
