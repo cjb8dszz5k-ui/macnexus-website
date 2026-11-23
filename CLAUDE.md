@@ -10,25 +10,28 @@ Ali Yuvarlak baut ein Einzelunternehmen für Apple-Software-Support in Österrei
 auf; seit 16.09.2026 ist macNexus sein einziges Projekt.
 Ausschließlich macOS/iOS/iCloud/Sicherheit/Migration — **keine Hardware-Reparatur**.
 
-**Angebot seit 16.09.2026** (ersetzt die alte 49,99-€-Pauschale):
+**Angebot seit 16.10.2026** (ersetzt die Fassung vom 16.09.2026 mit 49/89/129 €):
 
 1. **Hilfe, wenn etwas nicht funktioniert**
-   - Schnelle Hilfe — 30 Min online — **49 €**
-   - Große Hilfe — 60 Min online — **89 €**
-   - Hilfe bei dir zuhause — 60 Min vor Ort inkl. Anfahrt — **129 €**
-     (jede weitere angefangene halbe Stunde 45 €)
+   - Schnelle Hilfe — 30 Min online — **59 €**
+   - Große Hilfe — 60 Min online — **99 €**
+   - Hilfe bei dir zuhause — 60 Min vor Ort inkl. Anfahrt — **159 €** im
+     Bezirk Baden und Mödling, **199 €** in Wien und Wiener Neustadt
+     (jede weitere angefangene halbe Stunde 55 €)
 2. **Fix-und-fertig-Pakete** (Festpreis fürs Ergebnis)
-   - Neues Gerät startklar **149 €** · Backup, das wirklich funktioniert **149 €**
-   - Mac-Frühjahrsputz **119 €** · Umstieg Windows → Mac **249 €**
+   - Neues Gerät startklar **199 €** · Backup, das wirklich funktioniert **179 €**
+   - Mac-Frühjahrsputz **149 €** · Umstieg Windows → Mac **299 €**
 3. **macNexus Business** (B2B) — kostenloses 30-Min-Erstgespräch, danach
-   **120 €/Std.**, laufende Betreuung **ab 290 €/Monat** (2,5 Std. inkl.,
-   monatlich kündbar).
+   **139 €/Std.**, laufende Betreuung **390 €/Monat mit 3 Std. inkl.**
+   (= 130 €/Std., monatlich kündbar). Regel: Der Monatspreis steht nie ohne
+   die enthaltenen Stunden daneben.
 4. **macNexus Academy** — Video-Onlinekurse, **39 €** Einmalkauf.
 
 Durchgehend: 100 % Zufriedenheitsgarantie (keine Lösung = keine Rechnung).
 
 **Verbindliche Preisquelle:**
-`~/Documents/macnexus-unterlagen/macNexus_Angebot_und_Preise_2026.md`.
+`~/Documents/macnexus-unterlagen/01 Preise/macNexus_Preise.md`
+(Zusammenfassung mit Begründung im Vault: `macNexus/Angebot und Preise.md`).
 Preise nie aus dem Gedächtnis ändern — immer aus dieser Datei übernehmen und
 bei Änderungen zuerst dort aktualisieren.
 
