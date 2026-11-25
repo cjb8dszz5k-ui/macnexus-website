@@ -30,7 +30,7 @@ Ausschließlich macOS/iOS/iCloud/Sicherheit/Migration — **keine Hardware-Repar
 Durchgehend: 100 % Zufriedenheitsgarantie (keine Lösung = keine Rechnung).
 
 **Verbindliche Preisquelle:**
-`~/Documents/macnexus-unterlagen/01 Preise/macNexus_Preise.md`
+`~/Documents/macNexus Unterlagen/01 Preise/macNexus_Preise.md`
 (Zusammenfassung mit Begründung im Vault: `macNexus/Angebot und Preise.md`).
 Preise nie aus dem Gedächtnis ändern — immer aus dieser Datei übernehmen und
 bei Änderungen zuerst dort aktualisieren.
@@ -47,7 +47,7 @@ Fixkosten zu sparen, bis der erste zahlende Auftrag steht) — daher fehlen
 GISA-Zahl/UID im Impressum noch.
 
 Ausführliche Geschäftsdaten (Businessplan, Marketing, Roadmap) liegen in
-`~/Documents/macnexus-unterlagen/macNexus_Master_Gesamtdokumentation_fuer_Claude.md`
+`~/Documents/macNexus Unterlagen/macNexus_Master_Gesamtdokumentation_fuer_Claude.md`
 — bei Fragen zum Geschäftsmodell, Preisen oder der Roadmap dort nachlesen,
 nicht raten.
 
